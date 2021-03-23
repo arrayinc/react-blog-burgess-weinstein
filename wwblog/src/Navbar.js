@@ -1,22 +1,23 @@
-import React from "react";
-import './index.css';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
+import React, { Component } from "react";
+import "./index.css";
+import { Navbar, Nav, Button, Form, FormControl } from "react-bootstrap";
 
-<>
-  <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-    </Nav>
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-info">Search</Button>
-    </Form>
-  </Navbar>
-</>
+export class Navigation extends Component {
+  render() {
+    return (
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand href="#home">The White Wolf</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link href="#authors">Authors</Nav.Link>
+          <Nav.Link href="#recipes">Recipes</Nav.Link>
+          <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link href="#contact">contact</Nav.Link>
+        </Nav>
+        <Form inline>
+          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <Button>Hunt</Button>
+        </Form>
+      </Navbar>
+    );
+  }
+}

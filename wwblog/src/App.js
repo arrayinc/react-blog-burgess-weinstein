@@ -2,6 +2,7 @@ import React from "react";
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { HomeTitle } from "./Jumbotron";
+import { Navigation } from "./Navbar";
 
 
 // import Row from 'react-bootstrap/Row';
@@ -12,9 +13,7 @@ import { HomeTitle } from "./Jumbotron";
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Blog with Eli + Vlad</h1>
-      </header>
+      <Navigation/>
       <HomeTitle/>
     </div>
   );
