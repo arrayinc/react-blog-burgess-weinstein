@@ -5,10 +5,15 @@ import { Switch, Route } from "react-router-dom";
 import RecipesHome from "./RecipesHome";
 import HomePage from "./HomePage";
 import Authors from "./Authors";
+import { Navigation } from "./Navbar";
+import { BlogTitle } from "./BlogTitle";
+import PageFooter from "./Footer";
 
 function App() {
   return (
     <div className="App">
+      <Navigation />
+      <BlogTitle />
       <Switch>
         <Route path="/" component={HomePage} exact />
         <Route path="/Recipes" component={RecipesHome} />
@@ -16,6 +21,7 @@ function App() {
         <Route path="/About" component={HomePage} />
         <Route path="/Contact" component={HomePage} />
       </Switch>
+      <PageFooter />
     </div>
   );
 }
