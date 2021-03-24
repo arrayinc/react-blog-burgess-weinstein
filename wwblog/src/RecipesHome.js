@@ -1,13 +1,7 @@
 import React from "react";
-import { BlogTitle } from "./BlogTitle";
-import { Navigation } from "./Navbar";
-import PageFooter from "./Footer";
-
 function RecipesHome() {
     return (
       <div className="recipes-home">
-          <Navigation />
-          <BlogTitle />
         <div class="container">
           <div class="row align-items-center my-5">
             <div class="col-lg-7">
@@ -64,7 +58,6 @@ function RecipesHome() {
             </div>
           </div>
         </div>
-        <PageFooter />
       </div>
     );
   }
