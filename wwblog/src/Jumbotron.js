@@ -9,7 +9,7 @@ export class HomeTitle extends Component {
         <Container>
           <h1>The White Wolf</h1>
           <p>
-          On the hunt for recipes...
+            On the hunt for recipes...
           </p>
         </Container>
       </Jumbotron>

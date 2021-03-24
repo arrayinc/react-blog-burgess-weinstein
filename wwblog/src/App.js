@@ -3,7 +3,8 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { HomeTitle } from "./Jumbotron";
 import { Navigation } from "./Navbar";
-
+import { Slideshow } from "./Carousel";
+import PgBtm from "./Footer";
 
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
@@ -13,8 +14,10 @@ import { Navigation } from "./Navbar";
 function App() {
   return (
     <div className="App">
-      <Navigation/>
-      <HomeTitle/>
+      <Navigation />
+      <HomeTitle />
+      <Slideshow />
+      <PgBtm />
     </div>
   );
 }

@@ -1,8 +1,33 @@
 .App {
-    text-align: center;
-  }
+  text-align: center;
+}
+.App-link {
+  color: #61dafb;
+}
+.carousel-caption {
+  position: relative;
+  top: 50%;
+  font-size: x-large;
+  font-family: monospace;
+}
+.bottom{
+ margin: 15px;
+ background-color:#343a40;
+ color:ivory;
+ text-align: center;
+}
+.btm-container{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  width:100%
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  font-style: italic;
+}
 
-  
-  .App-link {
-    color: #61dafb;
-  }
+
