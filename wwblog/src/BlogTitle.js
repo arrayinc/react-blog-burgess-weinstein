@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./index.css";
 import { Jumbotron, Container } from "react-bootstrap";
 
-export class HomeTitle extends Component {
+export class BlogTitle extends Component {
   render() {
     return (
       <Jumbotron fluid>
