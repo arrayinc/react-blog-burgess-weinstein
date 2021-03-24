@@ -19,7 +19,7 @@ export class Slideshow extends Component {
               Continent.
               <br />
               <br />
-              <Button href="/Recipes">Go Huntin'</Button>
+              <Button href="/About">Tell me a story</Button>
             </p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -53,7 +53,8 @@ export class Slideshow extends Component {
             <p>
               Check out the recipes gathered from across the Continent!
               <br />
-              **link to recipes**
+              <br />
+              <Button href="/Recipes">Get Cookin'</Button>
             </p>
           </Carousel.Caption>
         </Carousel.Item>
