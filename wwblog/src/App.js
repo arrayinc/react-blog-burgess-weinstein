@@ -5,8 +5,8 @@ import { Switch, Route } from "react-router-dom";
 import RecipesHome from "./RecipesHome";
 import HomePage from "./HomePage";
 import Authors from "./Authors";
-import { Navigation } from "./Navbar";
 import { BlogTitle } from "./BlogTitle";
+import { Navigation } from "./Navbar";
 import PageFooter from "./Footer";
 
 function App() {
