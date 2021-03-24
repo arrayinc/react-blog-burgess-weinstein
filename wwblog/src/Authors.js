@@ -37,3 +37,4 @@ function TheAuthors() {
     </Container>
   );
 }
+export default TheAuthors;
