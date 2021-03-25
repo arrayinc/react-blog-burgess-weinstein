@@ -8,7 +8,7 @@ import Jaskier2 from "./AuthorPhotos/Jaskier2.jpg";
 
 function TheAuthors() {
   return (
-    <Container>
+    <Container className="ContainerMargin">
       <h1 className="witcher-font AuthorHeader">Authors from the Continent</h1>
       <Row>
         <Col>

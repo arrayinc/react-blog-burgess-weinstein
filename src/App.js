@@ -18,7 +18,6 @@ function App() {
   return (
     <div className="App">
       <Navigation />
-
       <Switch>
         <Route path="/" component={HomePage} exact />
         <Route path="/Recipes" component={RecipesHome} />

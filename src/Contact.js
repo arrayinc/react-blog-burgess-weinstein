@@ -4,7 +4,7 @@ import Letter from "./About/Letter.jpeg";
 
 function ContactPage() {
   return (
-    <Container>
+    <Container className="ContainerMargin">
       <Row>
         <Col>
           <img src={Letter} alt="Letter and quill" className="Letter"/>

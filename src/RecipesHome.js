@@ -7,7 +7,7 @@ import Wine from "./food/Wine.jpeg";
 
 function RecipesHome() {
   return (
-    <Container>
+    <Container className="ContainerMargin">
       <Row>
         <Col>
           <Link to="/LambPost">
