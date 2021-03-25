@@ -1,9 +1,18 @@
+@font-face {
+  font-family: "thewitcher";
+  src: local("TheWitcher"), url("./fonts/TheWitcher.ttf") format("truetype");
+  font-weight: medium;
+}
+
+.witcher-font {
+  font-family: thewitcher;
+  font-weight: medium;
+}
+
 .App {
   text-align: center;
 }
-.App-link {
-  color: #61dafb;
-}
+
 .carousel-caption {
   position: relative;
   top: 50%;
@@ -16,9 +25,11 @@
   text-align: center;
   width: auto !important ;
   position: sticky;
-  position:-webkit-sticky; 
+  position: -webkit-sticky;
   top: 0;
 }
+/*-- About & Contact Images --*/
+
 .Books {
   margin-left: 250px;
   width: 450px;
@@ -29,4 +40,20 @@
   margin-left: 250px;
   width: 200px;
   height: 300px;
+}
+
+/*-- Jumbotron --*/
+
+.Title {
+  font-size: 6em;
+}
+
+.Subtitle {
+  font-size: 2em;
+}
+
+/*-- Navbar --*/
+
+.NavbarTitle {
+  font-size: 0.5em;
 }
