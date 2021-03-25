@@ -1,42 +1,39 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import "./index.css";
 
 const PageFooter = () => {
   return (
-    <div className="bottom">
-      <div className="btm-container">
-        <div classname="row">{/* first column */}</div>
-        <div className="col">
-          <h4>White Wolf INC.</h4>
-          <ul classname="contact-info">
-            <li>1-800-273-825</li>
-            <li>White Orchard, Novigrad</li>
-            <li>Inn at the Crossroads</li>
-          </ul>
-        </div>
-        <div className="col">
+    <Container fixed="bottom" className="h-100 bottom">
+      <Row>
+        <Col>
+          <h4>White Wolf Inc.</h4>
+          <p>1-800-273-82550</p>
+          <p> White Orchard, Novigrad</p>
+          <p>Inn at the Crossroads</p>
+        </Col>
+        <Col>
           <h4>Creators</h4>
-          <ul classname="contact-info">
-            <li>Grand Master Vlad</li>
-            <li>Eternal E-man</li>
-            <li>Campers</li>
-          </ul>
-        </div>
-        <div className="col">
+          <p>Grand Master Vlad</p>
+          <p> Eternal E-man</p>
+          <p>#CodeCampers</p>
+        </Col>
+        <Col>
           <Nav defaultActiveKey="/" className="flex-column">
             <Nav.Link href="/Authors">Authors</Nav.Link>
             <Nav.Link href="/Recipes">Recipes</Nav.Link>
             <Nav.Link href="/About">About</Nav.Link>
             <Nav.Link href="/Contact">Contact</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
           </Nav>
-        </div>
-      </div>
+        </Col>
+      </Row>
       <hr />
-      <p>
-        &copy;{new Date().getFullYear()} White Wolf Inc.| All Rights Reserved |
-        Not liable for Nekker attacks
-      </p>
-    </div>
+        &copy;{new Date().getFullYear()} #CodeCampBlog| All Rights made up |
+         Not liable for Nekker attacks
+    </Container>
   );
 };
 export default PageFooter;
+   
