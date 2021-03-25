@@ -11,25 +11,14 @@
   font-family: monospace;
 }
 .bottom {
-  margin: 15px;
   background-color: #343a40;
   color: ivory;
   text-align: center;
+  width: auto !important ;
+  position: sticky;
+  position:-webkit-sticky; 
+  top: 0;
 }
-.btm-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.col {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  font-style: italic;
-}
-
 .Books {
   margin-left: 250px;
   width: 450px;
