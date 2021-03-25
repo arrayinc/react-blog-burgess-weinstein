@@ -7,11 +7,19 @@ function AboutPage() {
     <Container>
       <Row>
         <Col>
-          <img src={Books} alt="Books wrapped in spiderwebs" className="Books"/>
+          <img
+            src={Books}
+            alt="Books wrapped in spiderwebs"
+            className="Books"
+          />
         </Col>
         <Col>
-          About The White Wolf <br /> How did it come about?<br />How did it get
-          here?<br />Does it know things?<br /> Let's find out!
+          About The White Wolf <br /> How did it come about?
+          <br />
+          How did it get here?
+          <br />
+          Does it know things?
+          <br /> Let's find out!
         </Col>
       </Row>
     </Container>
