@@ -9,6 +9,11 @@
   font-weight: medium;
 }
 
+.ContainerMargin {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .App {
   text-align: center;
 }
@@ -44,16 +49,6 @@ margin-top:2em;
   height: 300px;
 }
 
-/*-- Jumbotron --*/
-
-.Title {
-  font-size: 6em;
-}
-
-.Subtitle {
-  font-size: 2em;
-}
-
 /*-- Navbar --*/
 
 .NavbarTitle {
@@ -63,3 +58,4 @@ margin-top:2em;
 .NavbarButtons {
   font-size: 1.5em;
 }
+

@@ -4,7 +4,7 @@ import Books from "./About/Books.jpeg";
 
 function AboutPage() {
   return (
-    <Container>
+    <Container className="ContainerMargin">
       <Row>
         <Col>
           <img
