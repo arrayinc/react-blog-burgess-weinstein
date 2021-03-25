@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Lamb from "./food/Lamb.jpeg";
 import Pizza from "./food/Pizza.jpeg";
@@ -9,13 +10,19 @@ function RecipesHome() {
     <Container>
       <Row>
         <Col>
-          <img src={Lamb} alt="Rack of Lamb" />
+          <Link to="/LambPost">
+            <img src={Lamb} alt="Rack of Lamb" />
+          </Link>
         </Col>
         <Col>
-          <img src={Pizza} alt="Pizza With Artichokes" />
+          <Link to="/PizzaPost">
+            <img src={Pizza} alt="Pizza With Artichokes" />
+          </Link>
         </Col>
         <Col>
-          <img src={Wine} alt="Glass of Wine" />
+          <Link to="/WinePost">
+            <img src={Wine} alt="Glass of Wine" />
+          </Link>
         </Col>
       </Row>
       <Row>
