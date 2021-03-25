@@ -20,7 +20,7 @@ const PageFooter = () => {
           <p>#CodeCampers</p>
         </Col>
         <Col>
-          <Nav defaultActiveKey="/" className="flex-column">
+          <Nav defaultActiveKey="/" className="flex-column" fixed="bottom">
             <Nav.Link href="/Authors">Authors</Nav.Link>
             <Nav.Link href="/Recipes">Recipes</Nav.Link>
             <Nav.Link href="/About">About</Nav.Link>

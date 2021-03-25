@@ -5,8 +5,8 @@ import { Navbar, Nav, Button, Form, FormControl } from "react-bootstrap";
 export class Navigation extends Component {
   render() {
     return (
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="/">The White Wolf</Navbar.Brand>
+      <Navbar bg="dark" variant="dark" sticky="top">
+        <Navbar.Brand href="/" className="NavbarTitle witcher-font">The White Wolf</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="/Authors">Authors</Nav.Link>
           <Nav.Link href="/Recipes">Recipes</Nav.Link>
