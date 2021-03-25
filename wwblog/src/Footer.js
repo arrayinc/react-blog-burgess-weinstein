@@ -26,8 +26,8 @@ const PageFooter = () => {
           <Nav defaultActiveKey="/" className="flex-column">
             <Nav.Link href="/Authors">Authors</Nav.Link>
             <Nav.Link href="/Recipes">Recipes</Nav.Link>
-            <Nav.Link href="/">About</Nav.Link>
-            <Nav.Link href="/">Contact</Nav.Link>
+            <Nav.Link href="/About">About</Nav.Link>
+            <Nav.Link href="/Contact">Contact</Nav.Link>
           </Nav>
         </div>
       </div>

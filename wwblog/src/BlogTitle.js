@@ -5,7 +5,7 @@ import { Jumbotron, Container } from "react-bootstrap";
 export class BlogTitle extends Component {
   render() {
     return (
-      <Jumbotron fluid>
+      <Jumbotron fluid ClassName="Jumbotron">
         <Container>
           <h1>The White Wolf</h1>
           <p>

@@ -8,6 +8,8 @@ import Authors from "./Authors";
 import { BlogTitle } from "./BlogTitle";
 import { Navigation } from "./Navbar";
 import PageFooter from "./Footer";
+import AboutPage from "./About";
+import ContactPage from "./Contact";
 
 function App() {
   return (
@@ -18,8 +20,8 @@ function App() {
         <Route path="/" component={HomePage} exact />
         <Route path="/Recipes" component={RecipesHome} />
         <Route path="/Authors" component={Authors} />
-        <Route path="/About" component={HomePage} />
-        <Route path="/Contact" component={HomePage} />
+        <Route path="/About" component={AboutPage} />
+        <Route path="/Contact" component={ContactPage} />
       </Switch>
       <PageFooter />
     </div>

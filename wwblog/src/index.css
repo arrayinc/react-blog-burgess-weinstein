@@ -10,19 +10,19 @@
   font-size: x-large;
   font-family: monospace;
 }
-.bottom{
- margin: 15px;
- background-color:#343a40;
- color:ivory;
- text-align: center;
+.bottom {
+  margin: 15px;
+  background-color: #343a40;
+  color: ivory;
+  text-align: center;
 }
-.btm-container{
-  display:flex;
-  flex-direction:row;
+.btm-container {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  width:100%
+  width: 100%;
 }
-.col{
+.col {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -30,4 +30,14 @@
   font-style: italic;
 }
 
+.Books {
+  margin-left: 250px;
+  width: 450px;
+  height: 338px;
+}
 
+.Letter {
+  margin-left: 250px;
+  width: 200px;
+  height: 300px;
+}
