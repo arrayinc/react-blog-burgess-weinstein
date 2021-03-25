@@ -19,13 +19,16 @@
   font-size: x-large;
   font-family: monospace;
 }
+/*-- Footer --*/
 .bottom {
   background-color: #343a40;
   color: ivory;
-  text-align: center;
-  width: auto !important ;
-  position: sticky;
-  
+}
+.space{
+display:table-row;
+margin-left: 21em;
+margin-top:2em;
+
 }
 /*-- About & Contact Images --*/
 
