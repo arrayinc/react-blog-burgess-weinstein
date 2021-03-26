@@ -13,6 +13,7 @@ import ContactPage from "./Contact";
 import LambPost from "./LambPost";
 import PizzaPost from "./PizzaPost";
 import WinePost from "./WinePost";
+import ErrorPage from "./ErrorPage";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/LambPost" component={LambPost} />
         <Route path="/PizzaPost" component={PizzaPost} />
         <Route path="/WinePost" component={WinePost} />
+        <Route component={ErrorPage} />
       </Switch>
       <PageFooter />
     </div>
