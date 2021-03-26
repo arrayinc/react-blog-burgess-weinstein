@@ -8,7 +8,7 @@ const PageFooter = () => {
     <Navbar className="bottom" bg="dark" variant="dark" sticky="bottom">
       <Row >
         <Col className="space witcher-font">
-          <h4>White Wolf Inc.</h4>
+          <h5>White Wolf Inc.</h5>
           <p>1-800-273-82550</p>
           <p> White Orchard, Novigrad</p>
           <p>Inn at the Crossroads</p>
