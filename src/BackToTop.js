@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Chevron2 from "./Icons/Chevron2.png"
+import Chevron2 from "./Icons/Chevron2.png";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,7 +14,7 @@ export default function ScrollToTop() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
@@ -23,11 +23,19 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <div className="scroll-to-top arrow" style={{ position: 'relative', zIndex: '2' }}>
-      {isVisible && 
+    <div
+      className="scroll-to-top arrow"
+      style={{ position: "relative", zIndex: "2" }}
+    >
+      {isVisible && (
         <div onClick={scrollToTop}>
-          <img src={Chevron2} alt='Go to top'/>
-        </div>}
+          <img src={Chevron2} alt="Go to top" />
+          <b>
+            Back To
+            Top
+          </b>
+        </div>
+      )}
     </div>
   );
 }
