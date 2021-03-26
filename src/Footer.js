@@ -2,11 +2,11 @@ import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import "./index.css";
-
+import BackToTop from "./BackToTop";
 const PageFooter = () => {
   return (
     <Navbar className="bottom" bg="dark" variant="dark" sticky="bottom">
-      <Row >
+      <Row>
         <Col className="space witcher-font">
           <h5>White Wolf Inc.</h5>
           <p>1-800-273-82550</p>
@@ -29,10 +29,9 @@ const PageFooter = () => {
           </Nav>
         </Col>
       </Row>
-      
+
+      <BackToTop />
     </Navbar>
-    
   );
 };
 export default PageFooter;
-   
