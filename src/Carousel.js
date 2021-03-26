@@ -10,7 +10,7 @@ export class Slideshow extends Component {
           <img
             className="d-block w-100"
             src="https://i.pinimg.com/originals/55/43/de/5543ded702377e41f4337faf883eba2b.jpg"
-            alt="Second slide"
+            alt="Group of adventurers"
           />
           <Carousel.Caption>
             <h3 class="witcher-font">Travelers</h3>
@@ -44,7 +44,7 @@ export class Slideshow extends Component {
           <img
             className="d-block w-100"
             src="https://media.giphy.com/media/KzWAhzWD3HrJyAcLEM/giphy.gif"
-            alt="Third slide"
+            alt="Group in tarvern cheersing"
           />
           <Carousel.Caption>
             <h3 class="witcher-font">Taste of Hearth</h3>
