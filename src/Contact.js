@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import Letter from "./About/Letter.jpeg";
-
+import ContactModal from "./Modal";
 function ContactPage() {
   return (
     <Container className="ContainerMargin">
@@ -29,9 +29,9 @@ function ContactPage() {
               <Form.Label>Brief decription of why your contacting us today</Form.Label>
               <Form.Control as="textarea" rows={3} />
             </Form.Group>
-            <Button variant="danger" type="submit" onClick={() => { alert('Thanks for submitting!'); }}>
-              Submit
-  </Button>
+            <>
+              <ContactModal />
+            </>
           </Form>
         </Col>
       </Row>
