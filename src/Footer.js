@@ -1,11 +1,14 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
-import { Row, Col } from "react-bootstrap";
-import "./index.css";
+import { Nav, Navbar, Row, Col } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 import BackToTop from "./BackToTop";
-const PageFooter = () => {
+import "./index.css";
+
+const PageFooter = (props) => {
+  const location = useLocation();
+  console.log(props);
   return (
-    <Navbar className="bottom" bg="dark" variant="dark" sticky="bottom">
+    <Navbar className="NavBarBottom" bg="dark" variant="dark" sticky="bottom">
       <Row>
         <Col className="space witcher-font">
           <h5>White Wolf Inc.</h5>
@@ -20,7 +23,7 @@ const PageFooter = () => {
           <p>#CodeCampers</p>
         </Col>
         <Col>
-          <Nav defaultActiveKey="/" className="flex-column space witcher-font">
+          <Nav activeKey={location.pathname} className="flex-column space witcher-font">
             <Nav.Link href="/Authors">Authors</Nav.Link>
             <Nav.Link href="/Recipes">Recipes</Nav.Link>
             <Nav.Link href="/About">About</Nav.Link>

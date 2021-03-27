@@ -6,7 +6,7 @@ import RecipesHome from "./RecipesHome";
 import HomePage from "./HomePage";
 import Authors from "./Authors";
 
-import { Navigation } from "./Navbar";
+import Navigation from "./Navbar";
 import PageFooter from "./Footer";
 import AboutPage from "./About";
 import ContactPage from "./Contact";

@@ -56,9 +56,11 @@
 }
 
 /*-- Footer Nav --*/
-.bottom {
+.NavBarBottom {
+  position: absolute;
   background-color: #343a40;
   color: ivory;
+  bottom: 0;
 }
 .space {
   margin-left: 16.5em;
