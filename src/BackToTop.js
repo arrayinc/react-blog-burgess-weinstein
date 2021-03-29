@@ -30,10 +30,7 @@ export default function ScrollToTop() {
       {isVisible && (
         <div onClick={scrollToTop}>
           <img src={Chevron2} alt="Go to top" />
-          <b>
-            Back To
-            Top
-          </b>
+          <b>Back To Top</b>
         </div>
       )}
     </div>

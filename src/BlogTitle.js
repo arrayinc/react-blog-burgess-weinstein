@@ -8,9 +8,7 @@ export class BlogTitle extends Component {
       <Jumbotron fluid className="Jumbotron">
         <Container>
           <h1 className="Title witcher-font">The White Wolf</h1>
-          <h2 className="Subtitle witcher-font">
-            On the hunt for recipes...
-          </h2>
+          <h2 className="Subtitle witcher-font">On the hunt for recipes...</h2>
         </Container>
       </Jumbotron>
     );
