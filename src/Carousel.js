@@ -6,7 +6,7 @@ export class Slideshow extends Component {
   render() {
     return (
       <Carousel fade>
-      <Carousel.Item>
+        <Carousel.Item>
           <img
             className="d-block w-100"
             src="https://i.pinimg.com/originals/55/43/de/5543ded702377e41f4337faf883eba2b.jpg"
@@ -19,10 +19,12 @@ export class Slideshow extends Component {
               with recipes galore
               <br />
               <br />
-              <Button variant="danger" href="/Authors">Who are they and where did they hail from?</Button>
+              <Button variant="danger" href="/Authors">
+                Who are they and where did they hail from?
+              </Button>
             </p>
           </Carousel.Caption>
-          </Carousel.Item>
+        </Carousel.Item>
         <Carousel.Item interval={5000}>
           <img
             className="d-block w-100"
@@ -36,7 +38,9 @@ export class Slideshow extends Component {
               Continent.
               <br />
               <br />
-              <Button variant="danger" href="/About">Tell me a story</Button>
+              <Button variant="danger" href="/About">
+                Tell me a story
+              </Button>
             </p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -52,7 +56,9 @@ export class Slideshow extends Component {
               Check out the recipes gathered from across the Continent!
               <br />
               <br />
-              <Button variant="danger" href="/Recipes">Get Cookin'</Button>
+              <Button variant="danger" href="/Recipes">
+                Get Cookin'
+              </Button>
             </p>
           </Carousel.Caption>
         </Carousel.Item>

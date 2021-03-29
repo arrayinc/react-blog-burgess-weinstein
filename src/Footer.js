@@ -23,7 +23,10 @@ const PageFooter = (props) => {
           <p>#CodeCampers</p>
         </Col>
         <Col>
-          <Nav activeKey={location.pathname} className="flex-column space witcher-font">
+          <Nav
+            activeKey={location.pathname}
+            className="flex-column space witcher-font"
+          >
             <Nav.Link href="/Authors">Authors</Nav.Link>
             <Nav.Link href="/Recipes">Recipes</Nav.Link>
             <Nav.Link href="/About">About</Nav.Link>

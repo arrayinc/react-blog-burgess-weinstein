@@ -20,13 +20,17 @@ function ContactPage() {
               <Form.Control as="select">
                 <option>N/A</option>
                 <option>You love the page</option>
-                <option>Your Matt and wish to tell us how awesome we are</option>
+                <option>
+                  You are Matt and wish to tell us how awesome we are
+                </option>
                 <option>Wish to go to the Continent</option>
                 <option>Want to give us money</option>
               </Form.Control>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Label>Brief decription of why your contacting us today</Form.Label>
+              <Form.Label>
+                Brief decription of why you're contacting us today
+              </Form.Label>
               <Form.Control as="textarea" rows={3} />
             </Form.Group>
             <>
