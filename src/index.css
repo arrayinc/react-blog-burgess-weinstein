@@ -70,3 +70,10 @@
 .arrow {
   margin-left: 150px;
 }
+/* Authors page Styles */
+.bio-container{
+  border: solid red;
+  border-radius: 50px;
+  height:20vh;
+
+}
