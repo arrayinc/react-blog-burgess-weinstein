@@ -5,7 +5,6 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 const Navigation = (props) => {
   const location = useLocation();
-  console.log(props);
   return (
     <Navbar
       collapseOnSelect
@@ -25,17 +24,17 @@ const Navigation = (props) => {
         >
           <Nav.Link href="/Authors">Authors</Nav.Link>
           <NavDropdown title="Recipes" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="/recipes/2.1">
+            <NavDropdown.Item href="/blogPost/1">
               King's Court Lamb
             </NavDropdown.Item>
-            <NavDropdown.Item href="/recipes/2.2">
+            <NavDropdown.Item href="/blogPost/2">
               Villenmerth pizza
             </NavDropdown.Item>
-            <NavDropdown.Item href="/recipes/2.3">
+            <NavDropdown.Item href="/blogPost/3">
               Mulled Mandrake Wine
             </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="/recipes/2.4">
+            <NavDropdown.Item href="/Recipes/2.4">
               Recipes Index
             </NavDropdown.Item>
           </NavDropdown>
