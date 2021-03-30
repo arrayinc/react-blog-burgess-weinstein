@@ -1,14 +1,15 @@
-import Pizza from "./food/Pizza.jpg";
-import Lamb from "./food/Lamb.jpg";
-import Wine from "./food/Wine.jpg";
+import Pizza from "./food/Pizza.jpeg";
+import Lamb from "./food/Lamb.jpeg";
+import Wine from "./food/Wine.jpeg";
 
 import Geralt from "./AuthorPhotos/Geralt.jpg";
 import Jaskier from "./AuthorPhotos/Jaskier2.jpg";
 import Yennefer from "./AuthorPhotos/Yennefer.jpg";
 
-const blogsData = [
+export const blogsData = [
   {
     id: 1,
+    blogTitle: "The White Wolf",
     title: "King's Court Lamb",
     coverImg: Lamb,
     author: {
