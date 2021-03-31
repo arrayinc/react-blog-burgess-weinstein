@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { Slideshow } from "./Carousel";
 
 const HomePage = (props) => {
@@ -8,12 +9,13 @@ const HomePage = (props) => {
       <Row>
         <Slideshow />
       </Row>
-      <br />
       <Row className="Blog-Previews-Row">
         {props.blogData.map((val, index) => (
           <Col key={val.id}>
+            <Link className="Blog-Preview-Link" to={"/blogPost/" + val.id}>
             <Image className="Blog-Previews" src={val.coverImg} />
-            <p>{val.title}</p>
+            <p className="Blog-Preview-Text witcher-font">{val.title}</p>
+            </Link>
           </Col>
         ))}
       </Row>
