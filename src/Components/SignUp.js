@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Books from "../Images/About/Books.jpeg";
 
-function AboutPage() {
+function SignUp() {
   return (
-    <Container className="about-container">
+    <Container className="sign-up-container">
       <Row>
         <Col>
           <img
@@ -19,10 +19,10 @@ function AboutPage() {
           How did it get here?
           <br />
           Does it know things?
-          <br /> Let's find out!
+          <br /> Sign up and find out!
         </Col>
       </Row>
     </Container>
   );
 }
-export default AboutPage;
+export default SignUp;
