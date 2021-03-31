@@ -28,7 +28,7 @@ const PageFooter = (props) => {
           >
             <Nav.Link href="/Authors">Authors</Nav.Link>
             <Nav.Link href="/Recipes">Recipes</Nav.Link>
-            <Nav.Link href="/About">About</Nav.Link>
+            <Nav.Link href="/SignUp">Sign Up</Nav.Link>
             <Nav.Link href="/Contact">Contact</Nav.Link>
             <Nav.Link href="/">Home</Nav.Link>
           </Nav>
