@@ -17,7 +17,7 @@ function ContactPage() {
             <option>N/A</option>
             <option>You love the page</option>
             <option>
-              You are Matt and wish to tell us how awesome we are
+              You are Great and wish to tell us how awesome we are
             </option>
             <option>Wish to go to the Continent</option>
             <option>Want to give us money</option>
