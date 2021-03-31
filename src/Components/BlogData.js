@@ -1,10 +1,10 @@
-import Pizza from "./food/Pizza.jpeg";
-import Lamb from "./food/Lamb.jpeg";
-import Wine from "./food/Wine.jpeg";
+import Pizza from "../Images/Food/Pizza.jpeg";
+import Lamb from "../Images/Food/Lamb.jpeg";
+import Wine from "../Images/Food/Wine.jpeg";
 
-import Geralt from "./AuthorPhotos/Geralt.jpg";
-import Jaskier from "./AuthorPhotos/Jaskier2.jpg";
-import Yennefer from "./AuthorPhotos/Yennefer.jpg";
+import Geralt from "../Images/AuthorPhotos/Geralt.jpg";
+import Jaskier from "../Images/AuthorPhotos/Jaskier2.jpg";
+import Yennefer from "../Images/AuthorPhotos/Yennefer.jpg";
 
 export const blogsData = [
   {
@@ -61,7 +61,7 @@ export const blogsData = [
   },
   {
     id: 3,
-    title: "Is Rock Dead?",
+    title: "Villenmerth Pizza",
     coverImg: Pizza,
     author: {
       name: "Jaskier (aka Dandelion)",
@@ -71,10 +71,8 @@ export const blogsData = [
         "Although he is not one to talk about himself, you've most likely heard endless recounts of his adventures with Geralt of Rivia, he is a humble bard after all. Having performed in many courts and tasted delicacies all across the Continent, Jaskier (aka Dandelion) was overjoyed to help school readers on some of the best dining he has experienced.",
     },
     datePublished: "December 13, 1268",
-    description:
-      "Pizza for the living or undead.",
-    content:
-      "Pizza recipe goes here",
+    description: "Pizza for the living or undead.",
+    content: "Pizza recipe goes here",
     comments: [
       {
         name: "Guest",

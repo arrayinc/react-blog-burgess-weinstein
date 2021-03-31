@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import Lamb from "./food/Lamb.jpeg";
-import Pizza from "./food/Pizza.jpeg";
-import Wine from "./food/Wine.jpeg";
+import Lamb from "../Images/Food/Lamb.jpeg";
+import Pizza from "../Images/Food/Pizza.jpeg";
+import Wine from "../Images/Food/Wine.jpeg";
 
 function RecipesHome() {
   return (

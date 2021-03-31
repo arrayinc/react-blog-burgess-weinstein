@@ -2,18 +2,18 @@ import React from "react";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Switch, Route } from "react-router-dom";
-import RecipesHome from "./RecipesHome";
-import HomePage from "./HomePage";
-import Authors from "./Authors";
-import blogsData from "./BlogData";
-import BlogPost from "./BlogPost";
+import RecipesHome from "./Components/RecipesHome";
+import HomePage from "./Components/HomePage";
+import Authors from "./Components/Authors";
+import blogsData from "./Components/BlogData";
+import BlogPost from "./Components/BlogPost";
 
-import Navigation from "./Navbar";
-import PageFooter from "./Footer";
-import AboutPage from "./About";
-import ContactPage from "./Contact";
+import Navigation from "./Components/Navbar";
+import PageFooter from "./Components/Footer";
+import AboutPage from "./Components/About";
+import ContactPage from "./Components/Contact";
 
-import ErrorPage from "./ErrorPage";
+import ErrorPage from "./Components/ErrorPage";
 
 function App() {
   return (
@@ -23,7 +23,12 @@ function App() {
       </header>
       <div className="body-container">
         <Switch>
-          <Route path="/" component={HomePage} exact />
+          <Route
+            exact
+            path="/"
+            render={(props) => <HomePage blogData={blogsData} {...props} />}
+          />
+
           <Route path="/Recipes" component={RecipesHome} />
           <Route path="/About" component={AboutPage} />
           <Route path="/Contact" component={ContactPage} />

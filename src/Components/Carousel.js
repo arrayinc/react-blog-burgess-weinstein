@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import "./index.css";
 import { Carousel, Button } from "react-bootstrap";
+import GeraltTavern from "../Images/Carousel/GeraltTavern.webp";
+import Travelers from "../Images/Carousel/Travelers.jpeg";
+import GroupCheers from "../Images/Carousel/GroupCheers.webp";
 
 export class Slideshow extends Component {
   render() {
     return (
       <Carousel fade>
-        <Carousel.Item>
+        <Carousel.Item className="CarouselOpacity">
           <img
             className="d-block w-100"
-            src="https://i.pinimg.com/originals/55/43/de/5543ded702377e41f4337faf883eba2b.jpg"
+            src={Travelers}
             alt="Group of adventurers"
           />
           <Carousel.Caption>
@@ -25,10 +27,10 @@ export class Slideshow extends Component {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={5000}>
+        <Carousel.Item interval={5000} className="CarouselOpacity">
           <img
             className="d-block w-100"
-            src="https://media.giphy.com/media/lPRLQmMlEZ9M7TxBYO/giphy.gif"
+            src={GeraltTavern}
             alt="Man teleporting onto a table"
           />
           <Carousel.Caption>
@@ -44,10 +46,10 @@ export class Slideshow extends Component {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="CarouselOpacity">
           <img
             className="d-block w-100"
-            src="https://media.giphy.com/media/KzWAhzWD3HrJyAcLEM/giphy.gif"
+            src={GroupCheers}
             alt="Group in tarvern cheersing"
           />
           <Carousel.Caption>

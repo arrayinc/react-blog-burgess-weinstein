@@ -2,7 +2,6 @@ import React from "react";
 import { Nav, Navbar, Row, Col } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import BackToTop from "./BackToTop";
-import "./index.css";
 
 const PageFooter = (props) => {
   const location = useLocation();

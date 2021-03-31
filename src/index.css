@@ -4,64 +4,18 @@
   font-weight: medium;
 }
 
-.ErrorGIF {
-  width: 1000px;
-  height: auto;
-  z-index: -1;
-}
+/*-- Global/App --*/
 
 .witcher-font {
   font-family: thewitcher;
   font-weight: medium;
 }
 
-.ContainerMargin {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 .App {
   text-align: center;
 }
 
-.carousel-caption {
-  position: relative;
-  top: 50%;
-  font-size: x-large;
-  font-family: monospace;
-}
-
-/*-- About & Contact Images --*/
-
-.Books {
-  margin-left: 250px;
-  width: 450px;
-  height: 338px;
-}
-
-.Letter {
-  margin-left: 250px;
-  width: 200px;
-  height: 300px;
-}
-
-
-/*-- Recipe Blog Post --*/
-
-.circular--portrait {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.circular--portrait img {
-  width: 100%;
-  height: auto;
-}
-
-/*-- Navbar --*/
+/*-- Top Navbar --*/
 
 .NavbarTitle {
   font-size: 2em !important;
@@ -86,9 +40,104 @@
 .arrow {
   margin-left: 150px;
 }
-/* Authors page Styles */
+
+/*-- HomePage --*/
+
+.Blog-Previews-Row {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.Blog-Previews {
+  position: relative;
+  border-radius: 90%;
+}
+
+/*-- Carousel --*/
+
+.CarouselOpacity {
+  opacity: 80%;
+}
+
+.carousel-caption {
+  position: relative;
+  top: 50%;
+  font-size: x-large;
+  font-family: monospace;
+}
+
+/*-- Recipe Blog Post --*/
+
+.circular--portrait {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+/*-- Authors --*/
+
+.authors {
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-bottom: 5%;
+  width: 200px;
+  height: 300px;
+  content: wrap;
+}
+.transparent {
+  border: none;
+}
+.profile-bg {
+  background-color: rgb(119, 119, 119);
+  color: white;
+}
+
+.AuthorHeader,
+.Accordion {
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.Accordion {
+  margin-bottom: 10%;
+}
+
 .bio-container {
   border: solid red;
   border-radius: 50px;
   height: 20vh;
+}
+
+/*-- About & Contact Images --*/
+
+.Books {
+  margin-left: 250px;
+  width: 450px;
+  height: 338px;
+}
+
+.Letter {
+  margin-left: 250px;
+  width: 200px;
+  height: 300px;
+}
+
+.about-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*-- Error Page --*/
+
+.ErrorGIF {
+  width: 1000px;
+  height: auto;
+  z-index: -1;
 }

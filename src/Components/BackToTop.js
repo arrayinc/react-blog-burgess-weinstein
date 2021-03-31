@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Chevron2 from "./Icons/Chevron2.png";
+import Chevron2 from "../Icons/Chevron2.png";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
