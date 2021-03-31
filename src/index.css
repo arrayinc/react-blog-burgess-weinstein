@@ -45,6 +45,22 @@
   height: 300px;
 }
 
+
+/*-- Recipe Blog Post --*/
+
+.circular--portrait {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
 /*-- Navbar --*/
 
 .NavbarTitle {
@@ -71,9 +87,8 @@
   margin-left: 150px;
 }
 /* Authors page Styles */
-.bio-container{
+.bio-container {
   border: solid red;
   border-radius: 50px;
-  height:20vh;
-
+  height: 20vh;
 }

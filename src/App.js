@@ -25,13 +25,17 @@ function App() {
         <Switch>
           <Route path="/" component={HomePage} exact />
           <Route path="/Recipes" component={RecipesHome} />
-          <Route path="/Authors" component={Authors} />
           <Route path="/About" component={AboutPage} />
           <Route path="/Contact" component={ContactPage} />
-          
+
+          <Route
+            path="/Authors"
+            render={(props) => <Authors blogData={blogsData} {...props} />}
+          />
+
           {blogsData.map((val, index) => {
             return (
-              <Route path={"/blogPost/" + val.id}>
+              <Route key={val.id} path={"/blogPost/" + val.id}>
                 <BlogPost blogData={val} />
               </Route>
             );
