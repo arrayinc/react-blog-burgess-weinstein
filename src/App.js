@@ -10,7 +10,7 @@ import BlogPost from "./Components/BlogPost";
 
 import Navigation from "./Components/Navbar";
 import PageFooter from "./Components/Footer";
-import AboutPage from "./Components/About";
+import SignUp from "./Components/SignUp";
 import ContactPage from "./Components/Contact";
 
 import ErrorPage from "./Components/ErrorPage";
@@ -30,7 +30,7 @@ function App() {
           />
 
           <Route path="/Recipes" component={RecipesHome} />
-          <Route path="/About" component={AboutPage} />
+          <Route path="/Sign Up" component={SignUp} />
           <Route path="/Contact" component={ContactPage} />
 
           <Route
