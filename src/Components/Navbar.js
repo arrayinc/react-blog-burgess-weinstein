@@ -21,15 +21,15 @@ const Navigation = (props) => {
           activeKey={location.pathname}
           className="NavbarButtons witcher-font ml-auto"
         >
-          <Nav.Link href="/Authors">Authors</Nav.Link>
-          <NavDropdown title="Recipes" id="collasible-nav-dropdown">
+          <Nav.Link className="NavbarHover" href="/Authors">Authors</Nav.Link>
+          <NavDropdown className="NavbarHover" title="Recipes" id="collasible-nav-dropdown">
             <NavDropdown.Item href="/blogPost/1">
               King's Court Lamb
             </NavDropdown.Item>
-            <NavDropdown.Item href="/blogPost/2">
+            <NavDropdown.Item href="/blogPost/3">
               Villenmerth pizza
             </NavDropdown.Item>
-            <NavDropdown.Item href="/blogPost/3">
+            <NavDropdown.Item href="/blogPost/2">
               Mulled Mandrake Wine
             </NavDropdown.Item>
             <NavDropdown.Divider />
@@ -37,8 +37,8 @@ const Navigation = (props) => {
               Recipes Index
             </NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="/About">About</Nav.Link>
-          <Nav.Link href="/Contact">Contact</Nav.Link>
+          <Nav.Link className="NavbarHover" href="/About">About</Nav.Link>
+          <Nav.Link className="NavbarHover" href="/Contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

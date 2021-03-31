@@ -12,6 +12,7 @@ const BlogPost = (props) => {
       <Col></Col>
       <Col>
         <Container>
+          
           <Image
             className="circular--portrait"
             src={props.blogData.author.avatar}
