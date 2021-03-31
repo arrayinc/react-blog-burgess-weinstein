@@ -21,7 +21,7 @@ export const blogsData = [
     },
     datePublished: "September 25, 1268",
     description: `A lamb fit for a king or for your plate?`,
-    content: `Write lamb recipe here - cook at 409F`,
+    content: `Write lamb recipe here - cook at 409F RECIPERECIPERECIPERECIPERECIPERECIPERECIPE \nRECIPERECIPERECIPERECIPERECIPERECIPERECIPERECIPE, RECIPERECIPERECIPERECIPERECIPERECIPERE\nCIPERECIPERECIPERECIPERECIPERECIPERECIPERECIPERECIPERECIPERECIPERECIPE\nRECIPERECIPERECIPERECIPERECIPERECIPERECIPE`,
     comments: [
       {
         name: "Guest",
