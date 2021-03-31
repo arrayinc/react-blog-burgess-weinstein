@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Error404 from "./ErrorPageBG/Error404.gif";
+import Error404 from "../Images/ErrorPageBG/Error404.gif";
 
 function ErrorPage() {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Books from "./About/Books.jpeg";
+import Books from "../Images/About/Books.jpeg";
 
 function AboutPage() {
   return (
-    <Container className="ContainerMargin">
+    <Container className="about-container">
       <Row>
         <Col>
           <img

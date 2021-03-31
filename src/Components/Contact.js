@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
-import Letter from "./About/Letter.jpeg";
+import Letter from "../Images/Contact/Letter.jpeg";
 import ContactModal from "./Modal";
 function ContactPage() {
   return (
