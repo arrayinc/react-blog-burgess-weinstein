@@ -34,7 +34,7 @@ function App() {
           <Route path="/Contact" component={ContactPage} />
 
           <Route
-            path="/Authors"
+            path="/Authors/"
             render={(props) => <Authors blogData={blogsData} {...props} />}
           />
 

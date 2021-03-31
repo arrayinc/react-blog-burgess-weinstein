@@ -18,7 +18,7 @@ function ContactModal() {
         </Modal.Header>
         <Modal.Body>Your message has been sent!</Modal.Body>
         <Modal.Footer>
-          <Button variant="danger" onClick={handleClose}>
+          <Button href="/Contact" variant="danger" onClick={handleClose}>
             Close
           </Button>
         </Modal.Footer>

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "thewitcher";
-  src: local("TheWitcher"), url("./fonts/TheWitcher.ttf") format("truetype");
+  src: local("TheWitcher"), url("./Fonts/TheWitcher.ttf") format("truetype");
   font-weight: medium;
 }
 
@@ -25,6 +25,17 @@
   font-size: 1.5em;
 }
 
+.NavbarHover {
+  transition-duration: 0.2s;
+  position: relative;
+}
+
+.NavbarHover:hover {
+  transform: translateY(-3px);
+  transition-duration: 0.2s;
+}
+
+
 /*-- Footer Nav --*/
 .NavBarBottom {
   position: absolute;
@@ -45,12 +56,31 @@
 
 .Blog-Previews-Row {
   position: relative;
-  margin-bottom: 1em;
+  background-color: #28323c;
 }
 
 .Blog-Previews {
-  position: relative;
   border-radius: 90%;
+  width: 250px;
+  height: 250px;
+  padding: 15px;
+  position: relative;
+  transition-duration: 0.2s;
+}
+
+.Blog-Previews:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.2s;
+}
+
+.Blog-Preview-Text {
+  color: white;
+  font-size: 2em;
+}
+
+
+.Blog-Preview-Link:hover {
+  text-decoration: none;
 }
 
 /*-- Carousel --*/

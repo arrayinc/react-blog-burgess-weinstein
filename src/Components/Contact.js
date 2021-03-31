@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import ContactModal from "./Modal";
 
-
 function ContactPage() {
   return (
     <div className="transparent">
