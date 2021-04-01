@@ -47,7 +47,7 @@ const Navigation = (props) => {
           <Nav.Link className="NavbarHover" href="/Contact">
             Contact
           </Nav.Link>
-          <Nav.Link className="NavbarHover" href="/Sign Up">
+          <Nav.Link className="NavbarHover" href="/SignUp">
             Sign Up
           </Nav.Link>
         </Nav>
