@@ -177,6 +177,11 @@
   margin-top: 1em;
 }
 
+.video-player {
+  position: relative;
+  bottom: -20px;
+}
+
 /*-- Authors Page --*/
 
 .author-body {
