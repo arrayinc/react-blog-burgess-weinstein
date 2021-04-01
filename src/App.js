@@ -30,7 +30,7 @@ function App() {
           />
 
           <Route path="/Recipes" component={RecipesHome} />
-          <Route path="/Sign Up" component={SignUp} />
+          <Route path="/SignUp" component={SignUp} />
           <Route path="/Contact" component={ContactPage} />
 
           <Route
