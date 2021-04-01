@@ -29,7 +29,8 @@ function App() {
             render={(props) => <HomePage blogData={blogsData} {...props} />}
           />
 
-          <Route path="/Recipes" component={RecipesHome} />
+          <Route path="/Recipes" render={(props) => <RecipesHome blogData={blogsData} {...props} />}
+          />
           <Route path="/SignUp" component={SignUp} />
           <Route path="/Contact" component={ContactPage} />
 

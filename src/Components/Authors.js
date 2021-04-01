@@ -34,7 +34,7 @@ const Authors = (props) => {
         </Row>
       </Container>
 
-      <Container className="author-bio-container mb-5">
+      <Container className="author-bio-container">
         <AuthorInfoSection className="author-bio-text" blogData={props.blogData[authorId]} />
       </Container>
     </div>
