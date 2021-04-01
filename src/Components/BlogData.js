@@ -20,7 +20,8 @@ export const blogsData = [
         "Born into poverty yet now here she stands as advisor to kings and Witchers alike. A massive fan of the finer things in life, Yennefer graces readers with some of the best dishes she has tasted at kings banquets. Should you find yourself in a Kings Court surely you’ll become acquainted.",
     },
     datePublished: "September 25, 1268",
-    description: `A lamb fit for a king or for your plate?`,
+    description: `A lamb fit for a king or your plate?`,
+    url: `url="https://youtu.be/rL0cBoh02Do?t=14"`,
     ingredients: (
       <Container>
         <div>
@@ -86,32 +87,50 @@ export const blogsData = [
         "Geralt is a Witcher from the School of the Wolf . Though his backstory may be filled with darkness and very little happiness he manages to find slivers of happiness on the Continent where he has met friends such as Jaskier and Yennefer. Geralt doesn’t talk much, but that hasn’t stopped him from giving his take on some of the culinary experiences he's enjoyed on his travels . If ever you find a monter near home, simply “Toss a coin to your Witcher”. ",
     },
     datePublished: "October 6, 1268",
-    description: `Wine is life`,
+    description: `A Most Uncommon Wine`,
+    url: `https://youtu.be/SW7mrBrComE`,
     ingredients: (
       <Container>
         <div>
           <ul>
-            <li>2 bottles of wine (Prefer from Corvo Bianco but any kind will do)</li>
+            <li>
+              2 bottles of wine (Prefer from Corvo Bianco but any kind will do)
+            </li>
 
-            <li>1 apple sliced (Balisse fruit works best but not easily found)</li>
+            <li>
+              1 apple sliced (Balisse fruit works best but not easily found)
+            </li>
 
-            <li>1 Mandrake root ( or ginger since mandrakes are not an easy find)</li>
+            <li>
+              1 Mandrake root ( or ginger since mandrakes are not an easy find)
+            </li>
 
             <li>3 cinnamon sticks</li>
 
             <li> handful of whole cloves</li>
 
             <li>Ground star anise</li>
-            
+
             <li>Cardamon pods (if you have any)</li>
           </ul>
         </div>
       </Container>
     ),
-    content: <p> Instructions. <br/> Combine all ingredients in a saucepan and give them a quick stir.
-    Simmer.  Heat until the wine just barely reaches a simmer over medium-high heat.  (Dont let it bubble it gets rid of the alcohol which defeats the purpose.)  Reduce heat to low, cover, and let the wine simmer for at least 15 minutes or up to 3 hours.
-    Strain and season.  Using a fine mesh strainer, remove and discard the apples, cloves, cinnamon sticks, star anise and mandrake, basically all of the chunks.  Give the mulled wine a taste, and stir in your desired amount of extra sweetener (white honey does good if your on a budget) if needed.
-    Serve. Serve warm in heatproof mugs spike it with as much of the left over wine as you want, then top it with some garnishes.</p>,
+    content: (
+      <p>
+        Combine all ingredients in a saucepan and give them a quick stir.
+        Simmer. Heat until the wine just barely reaches a simmer over
+        medium-high heat. (Dont let it bubble it gets rid of the alcohol which
+        defeats the purpose.) Reduce heat to low, cover, and let the wine simmer
+        for at least 15 minutes or up to 3 hours. Strain and season. Using a
+        fine mesh strainer, remove and discard the apples, cloves, cinnamon
+        sticks, star anise and mandrake, basically all of the chunks. Give the
+        mulled wine a taste, and stir in your desired amount of extra sweetener
+        (white honey does good if your on a budget) if needed. Serve. Serve warm
+        in heatproof mugs spike it with as much of the left over wine as you
+        want, then top it with some garnishes.
+      </p>
+    ),
     comments: [
       {
         name: "Guest",
@@ -136,7 +155,8 @@ export const blogsData = [
         "Although he is not one to talk about himself, you've most likely heard endless recounts of his adventures with Geralt of Rivia, he is a humble bard after all. Having performed in many courts and tasted delicacies all across the Continent, Jaskier (aka Dandelion) was overjoyed to help school readers on some of the best dining he has experienced.",
     },
     datePublished: "December 13, 1268",
-    description: "Pizza for the living or undead.",
+    url: `https://youtu.be/W0t0SrNcPk8`,
+    description: "Pizza dough for the living and undead",
     ingredients: (
       <Container>
         <div>
@@ -160,18 +180,46 @@ export const blogsData = [
         </div>
       </Container>
     ),
-    content: <p>Whatever you have will determine the time it takes, Mix the bread flour, sugar, salt, onion powder, garlic powder, oregano and yeast until its well combined. After that get, a liquid measuring cup and combine the ice water and a tablespoon of olive oil. If you are using a machine let it run on slow to medium speed (don’t make a mess), slowly drizzle the liquid combo in until a sticky ball forms.
-    **Note, if you don’t have a machine, I recommend pouring in a little at a time then whisking well, and repeat until the same outcome, probably will have to switch to kneading sooner to make sure its combined but keep going until you get a sticky ball**
-    Add more water if needed, 1 tablespoon at a time. Transfer to an oiled work surface and knead until smooth. Then, place it into an oiled bowl, cover with plastic wrap and refrigerate overnight (12 hours).
-    After chilled
-    Cut the now chilled dough into 2 equal halves. Wrap them individually and let them sit at room temp for at least 1 hour.
-    Pizza Stone/oven
-    Place a pizza stone in the oven BEFORE preheating the oven to 550 degrees. Need that pizza stone to be up to temp. When you are at this step it is recommended to prep the toppings and sauce for the pizza while the oven is warming up.
-    **warning when placing, adjusting and removing the pizza, do not remove the pizza stone from the oven, the sudden change in temp provide a high chance for the stone to break. When done cooking turn off the oven and let the pizza stone sit until completely cool**
-    Work the dough
-    Get out your pizza peel and dust it generously with some flour. Generously dust a open work surface with all purpose flour or bread flour, this is to make sure it doesn’t stick to the work surface, if it sticks it will tear that will be super messy. Get out 1 dough piece and gently with your fingertips, working your way around and out from the center, push the dough out to form an 8-inch round dough, work evenly otherwise you will get thin spots where it cant tear easier or wont cook evenly leave it a little higher on the edge for that nice crust.
-    This is where its gets a little tricky and will take some practice, pick up the round of the dough (near the edge) and make a fist in both hands, let it sit on your knuckles and let gravity stretch it for you. Go hand over hand until the dough is about 14-inchs round. After reaching desired roundness set the dough on the preprepared pizza peel and reshape to a circle and again leaving the edges a little thicker.
-    </p>,
+    content: (
+      <p>
+        Whatever you have will determine the time it takes, Mix the bread flour,
+        sugar, salt, onion powder, garlic powder, oregano and yeast until its
+        well combined. After that get, a liquid measuring cup and combine the
+        ice water and a tablespoon of olive oil. If you are using a machine let
+        it run on slow to medium speed (don’t make a mess), slowly drizzle the
+        liquid combo in until a sticky ball forms. **Note, if you don’t have a
+        machine, I recommend pouring in a little at a time then whisking well,
+        and repeat until the same outcome, probably will have to switch to
+        kneading sooner to make sure its combined but keep going until you get a
+        sticky ball** Add more water if needed, 1 tablespoon at a time. Transfer
+        to an oiled work surface and knead until smooth. Then, place it into an
+        oiled bowl, cover with plastic wrap and refrigerate overnight (12
+        hours). After chilled Cut the now chilled dough into 2 equal halves.
+        Wrap them individually and let them sit at room temp for at least 1
+        hour. Pizza Stone/oven Place a pizza stone in the oven BEFORE preheating
+        the oven to 550 degrees. Need that pizza stone to be up to temp. When
+        you are at this step it is recommended to prep the toppings and sauce
+        for the pizza while the oven is warming up. **warning when placing,
+        adjusting and removing the pizza, do not remove the pizza stone from the
+        oven, the sudden change in temp provide a high chance for the stone to
+        break. When done cooking turn off the oven and let the pizza stone sit
+        until completely cool** Work the dough Get out your pizza peel and dust
+        it generously with some flour. Generously dust a open work surface with
+        all purpose flour or bread flour, this is to make sure it doesn’t stick
+        to the work surface, if it sticks it will tear that will be super messy.
+        Get out 1 dough piece and gently with your fingertips, working your way
+        around and out from the center, push the dough out to form an 8-inch
+        round dough, work evenly otherwise you will get thin spots where it cant
+        tear easier or wont cook evenly leave it a little higher on the edge for
+        that nice crust. This is where its gets a little tricky and will take
+        some practice, pick up the round of the dough (near the edge) and make a
+        fist in both hands, let it sit on your knuckles and let gravity stretch
+        it for you. Go hand over hand until the dough is about 14-inchs round.
+        After reaching desired roundness set the dough on the preprepared pizza
+        peel and reshape to a circle and again leaving the edges a little
+        thicker.
+      </p>
+    ),
     comments: [
       {
         name: "Guest",
