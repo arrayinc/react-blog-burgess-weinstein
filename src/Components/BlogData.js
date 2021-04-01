@@ -91,24 +91,27 @@ export const blogsData = [
       <Container>
         <div>
           <ul>
-            <li>1/4 cup chopped fresh WINE</li>
+            <li>2 bottles of wine (Prefer from Corvo Bianco but any kind will do)</li>
 
-            <li>12 garlic cloves, minced</li>
+            <li>1 apple sliced (Balisse fruit works best but not easily found)</li>
 
-            <li>1 tablespoon chopped fresh oregano</li>
+            <li>1 Mandrake root ( or ginger since mandrakes are not an easy find)</li>
 
-            <li>2 tablespoons salt</li>
+            <li>3 cinnamon sticks</li>
 
-            <li>2 teaspoons ground black pepper</li>
+            <li> handful of whole cloves</li>
 
-            <li>2 Crown roasts of lamb (14 chops total)</li>
-
-            <li>Olive oil</li>
+            <li>Ground star anise</li>
+            
+            <li>Cardamon pods (if you have any)</li>
           </ul>
         </div>
       </Container>
     ),
-    content: `Write Wine Recipe here!`,
+    content: <p> Instructions. <br/> Combine all ingredients in a saucepan and give them a quick stir.
+    Simmer.  Heat until the wine just barely reaches a simmer over medium-high heat.  (Dont let it bubble it gets rid of the alcohol which defeats the purpose.)  Reduce heat to low, cover, and let the wine simmer for at least 15 minutes or up to 3 hours.
+    Strain and season.  Using a fine mesh strainer, remove and discard the apples, cloves, cinnamon sticks, star anise and mandrake, basically all of the chunks.  Give the mulled wine a taste, and stir in your desired amount of extra sweetener (white honey does good if your on a budget) if needed.
+    Serve. Serve warm in heatproof mugs spike it with as much of the left over wine as you want, then top it with some garnishes.</p>,
     comments: [
       {
         name: "Guest",
