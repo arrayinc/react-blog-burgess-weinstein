@@ -8,7 +8,7 @@ function ContactPage() {
       <Container>
         <Row>
           <Col>
-            <Form className="form-container greatprimer-font">
+            <Form className="contact-form-container greatprimer-font">
               <Form.Group controlId="exampleForm.ControlInput1">
                 <Form.Label><h3>Email</h3></Form.Label>
                 <Form.Control type="email" placeholder="name@example.com" />
