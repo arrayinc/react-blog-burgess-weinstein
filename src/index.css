@@ -34,7 +34,6 @@ body {
 .NavbarTitle {
   font-size: 2em !important;
   text-shadow: 1px 1px 12px black;
-
 }
 
 .NavbarButtons {
@@ -51,7 +50,6 @@ body {
   transition-duration: 0.2s;
   text-shadow: 2px 2px 8px black;
 }
-
 
 /*-- Footer Nav --*/
 
@@ -105,7 +103,6 @@ body {
   color: white;
   font-size: 2em;
   text-shadow: 2px 2px 2px black;
-
 }
 .Blog-Preview-Link:hover {
   text-decoration: none;
@@ -147,7 +144,6 @@ body {
   margin-top: -0.5em;
   color: white;
   text-shadow: rgba(46, 35, 17, 0.897) 2px 2px 3px;
-
 }
 
 .Blog-Subtitle {
@@ -171,7 +167,6 @@ body {
   margin-top: 1em;
   color: white;
   text-shadow: rgba(22, 16, 8, 0.897) 2px 2px 2px;
-
 }
 
 .blog-image {
@@ -266,10 +261,7 @@ body {
 /*-- Authors Page --*/
 
 .author-body {
-  background: linear-gradient(
-      rgba(20, 4, 4, 0.664),
-      rgba(8, 8, 8, 0.883)
-    ),
+  background: linear-gradient(rgba(20, 4, 4, 0.664), rgba(8, 8, 8, 0.883)),
     url(Images/AuthorPhotos/Continent.jpeg);
   background-position: center;
   height: 100vh;
@@ -329,17 +321,40 @@ body {
 .transparent {
   background: linear-gradient(
       rgba(53, 10, 10, 0.287),
-      rgba(190, 172, 172, 0.45)
+      rgba(190, 172, 172, 0.287)
     ),
     url(Images/Contact/OfficialWitcher.jpg);
   background-position: center;
   width: 100vw;
   height: 70vh;
 }
-.Books {
-  margin-left: 250px;
-  width: 450px;
-  height: 338px;
+
+
+/* need to clean up after presentation */
+
+
+.spacer {
+  margin-top: 100px;
+}
+.spacing {
+  margin-left: 35px;
+  margin-top: 50px;
+}
+
+.right{
+  margin-right: 115px;
+}
+.signup-backdrop-image {
+  background-image: 
+  linear-gradient(
+      rgba(180, 38, 38, 0.287),
+      rgba(190, 172, 172, 0.45)
+    ),
+    url(Images/SignUp/signup-background.jpg);
+  background-position-x: center;
+  background-position-y: center;
+  width: 100vw;
+  height: 90vh;
 }
 
 .form-container {
@@ -349,11 +364,25 @@ body {
   margin-left: 32%;
   margin-top: 8%;
 }
-.about-container {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
+.signContainer {
+  background: linear-gradient(
+      rgba(53, 10, 10, 0.287),
+      rgba(190, 172, 172, 0.45)
+    ),
+    url(Images/SignUp/witcher-join.jpg);
 
+  margin-top: 150px;
+  margin-left: 32%;
+  width: 450px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 19px;
+  box-shadow: 0 0 2px rgba(15, 15, 0.28);
+  position: relative;
+  overflow: visible;
+  border: solid black;
+}
 /*-- Error Page --*/
 
 .ErrorGIF {

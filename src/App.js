@@ -10,7 +10,7 @@ import BlogPost from "./Components/BlogPost";
 
 import Navigation from "./Components/Navbar";
 import PageFooter from "./Components/Footer";
-import SignUp from "./Components/SignUp";
+import Signin from "./Components/SignUp";
 import ContactPage from "./Components/Contact";
 
 import ErrorPage from "./Components/ErrorPage";
@@ -31,7 +31,7 @@ function App() {
 
           <Route path="/Recipes" render={(props) => <RecipesHome blogData={blogsData} {...props} />}
           />
-          <Route path="/SignUp" component={SignUp} />
+          <Route path="/Signup" component={Signin} />
           <Route path="/Contact" component={ContactPage} />
 
           <Route
