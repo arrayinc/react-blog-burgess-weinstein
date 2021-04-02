@@ -21,7 +21,7 @@ export const blogsData = [
     },
     datePublished: "September 25, 1268",
     description: `A lamb fit for a king or your plate?`,
-    url: `url="https://youtu.be/rL0cBoh02Do?t=14"`,
+
     ingredients: (
       <Container>
         <div>
@@ -39,6 +39,8 @@ export const blogsData = [
             <li>2 Crown roasts of lamb (14 chops total)</li>
 
             <li>Olive oil</li>
+
+            <li>6 guests (not for roasting)</li>
           </ul>
         </div>
       </Container>
@@ -88,21 +90,21 @@ export const blogsData = [
     },
     datePublished: "October 6, 1268",
     description: `A Most Uncommon Wine`,
-    url: `https://youtu.be/SW7mrBrComE`,
+
     ingredients: (
       <Container>
         <div>
           <ul>
             <li>
-              2 bottles of wine (Prefer from Corvo Bianco but any kind will do)
+              2 bottles of wine (Preferably from Corvo Bianco)
             </li>
 
             <li>
-              1 apple sliced (Balisse fruit works best but not easily found)
+              1 Balisse fruit (I guess Apples could do as well..)
             </li>
 
             <li>
-              1 Mandrake root ( or ginger since mandrakes are not an easy find)
+              1 Mandrake root (For those too weak to find them, ginger works.)
             </li>
 
             <li>3 cinnamon sticks</li>
@@ -155,7 +157,7 @@ export const blogsData = [
         "Although he is not one to talk about himself, you've most likely heard endless recounts of his adventures with Geralt of Rivia, he is a humble bard after all. Having performed in many courts and tasted delicacies all across the Continent, Jaskier (aka Dandelion) was overjoyed to help school readers on some of the best dining he has experienced.",
     },
     datePublished: "December 13, 1268",
-    url: `https://youtu.be/W0t0SrNcPk8`,
+
     description: "Pizza dough for the living and undead",
     ingredients: (
       <Container>

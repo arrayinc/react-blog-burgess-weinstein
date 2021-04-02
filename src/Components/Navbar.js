@@ -19,14 +19,14 @@ const Navigation = (props) => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav
           activeKey={location.pathname}
-          className="NavbarButtons witcher-font ml-auto"
+          className="witcher-font ml-auto"
         >
-          <Nav.Link className="NavbarHover" href="/">
+          <Nav.Link className="NavbarButtons NavbarHover" href="/">
             Home
           </Nav.Link>
 
           <NavDropdown
-            className="NavbarHover"
+            className="Navbar-Dropdown"
             title="Recipes"
             id="collasible-nav-dropdown"
           >
@@ -44,13 +44,13 @@ const Navigation = (props) => {
               Recipes Index
             </NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link className="NavbarHover" href="/Authors">
+          <Nav.Link className="NavbarButtons NavbarHover" href="/Authors">
             Authors
           </Nav.Link>
-          <Nav.Link className="NavbarHover" href="/Contact">
+          <Nav.Link className="NavbarButtons NavbarHover" href="/Contact">
             Contact
           </Nav.Link>
-          <Nav.Link className="NavbarHover" href="/SignUp">
+          <Nav.Link className="NavbarButtons NavbarHover" href="/SignUp">
             Sign Up
           </Nav.Link>
         </Nav>

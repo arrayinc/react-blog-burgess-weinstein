@@ -4,6 +4,8 @@
   font-weight: medium;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap");
+
 html,
 body {
   width: 100%;
@@ -13,11 +15,29 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(74, 55, 68);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+}
+
 /*-- Global/App --*/
 
 .witcher-font {
   font-family: thewitcher;
   font-weight: medium;
+}
+
+.greatprimer-font {
+  font-family: "IM Fell Great Primer SC", serif;
 }
 
 .App {
@@ -33,11 +53,12 @@ body {
 
 .NavbarTitle {
   font-size: 2em !important;
-  text-shadow: 1px 1px 12px black;
+  text-shadow: 0.5px 1px 8px black;
 }
 
 .NavbarButtons {
   font-size: 1.5em;
+  text-shadow: 0.5px 1px 8px black;
 }
 
 .NavbarHover {
@@ -48,7 +69,31 @@ body {
 .NavbarHover:hover {
   transform: translateY(-3px);
   transition-duration: 0.2s;
-  text-shadow: 2px 2px 8px black;
+  text-shadow: 2px 2px 4px rgb(47, 38, 22);
+}
+
+/*-- Top Navbar Recipes Dropdown Button --*/
+
+.Navbar-Dropdown {
+  transition-duration: 0.2s;
+  position: relative;
+  font-size: 1.5em;
+  text-shadow: 0.5px 1px 8px black;
+}
+
+.Navbar-Dropdown:hover {
+  position: relative;
+  transform: translateY(-3px);
+  transition-duration: 0.2s;
+  text-shadow: none;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: rgb(197, 192, 192);
+  text-decoration: none;
+  background-color: #212529 !important;
+  text-shadow: none;
 }
 
 /*-- Footer Nav --*/
@@ -91,12 +136,13 @@ body {
   border: solid rgb(218, 184, 123) 7px;
   transition-duration: 0.2s;
   z-index: 1;
+  box-shadow: black 3px 2px 30px;
 }
 
 .Blog-Previews:hover {
   transform: translateY(-10px);
   transition-duration: 0.2s;
-  box-shadow: 5px 5px 60px rgba(105, 98, 71, 0.952);
+  box-shadow: 5px 5px 40px rgba(105, 98, 71, 0.952);
 }
 
 .Blog-Preview-Text {
@@ -108,10 +154,25 @@ body {
   text-decoration: none;
 }
 
+.scrollbar:-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+.scrollbar:-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);        /* color of the tracking area */
+}
+
+.scrollbar:-webkit-scrollbar-thumb {
+  background-color: rgb(74, 55, 68);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+}
+
 /*-- Carousel --*/
 
 .carousel-container {
   width: fit-content;
+  font-size: 25pt;
 }
 
 .CarouselOpacity {
@@ -120,43 +181,57 @@ body {
 
 .carousel-caption {
   position: relative;
-  top: 50%;
-  font-size: x-large;
-  font-family: monospace;
+  top: 35%;
+  left: 28% !important;
+  width: 22em;
+  height: 10em;
+  background-color: rgba(0, 0, 0, 0.157);
+  border-radius: 10% !important;
 }
 
 /*--  Blog Post Generator --*/
 
 .blog-post-body {
-  background-color: rgb(36, 36, 36);
-  background-position: center;
-  height: 95vh !important;
+  background: linear-gradient(rgba(36, 32, 32, 0.233), rgba(29, 29, 29, 0.281)),
+  url(Images/Food/Parchment.jpeg);
+  height: 100vh !important;
 }
 
 .blog-post-jumbotron {
   height: 200px;
   position: relative;
-  background-color: rgb(61, 61, 63) !important;
+  background-color: rgb(37, 37, 37) !important;
 }
 
 .Blog-Title {
+  position: relative;
   font-size: 4em;
   margin-top: -0.5em;
+  right: 260px;
   color: white;
   text-shadow: rgba(46, 35, 17, 0.897) 2px 2px 3px;
 }
 
 .Blog-Subtitle {
+  position: relative;
+  right: 260px;
   font-size: 2em;
   color: beige;
+}
+
+.author-block {
+  position: relative;
+  bottom: 230px;
+  left: 180px;
+  z-index: 1;
 }
 
 .author-portrait {
   position: relative;
   float: left;
   right: 2%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   z-index: 1;
   border: solid rgb(255, 255, 255) 3px;
@@ -164,9 +239,10 @@ body {
 
 .author-details {
   position: relative;
+  font-size: 17pt;
   margin-top: 1em;
   color: white;
-  text-shadow: rgba(22, 16, 8, 0.897) 2px 2px 2px;
+  text-shadow: rgba(80, 78, 75, 0.897) 2px 2px 2px;
 }
 
 .blog-image {
@@ -177,11 +253,12 @@ body {
   height: 500px;
   border-radius: 90%;
   border: solid rgb(218, 184, 123) 7px;
+  box-shadow: black 3px 2px 40px;
 }
 
 .blog-content-container {
   position: relative;
-  bottom: 25%;
+  bottom: 20%;
   right: 10%;
   height: 240px;
   width: 640px !important;
@@ -193,9 +270,9 @@ body {
 
 .blog-content {
   position: relative;
-  font-family: "Times New Roman", Times, serif;
   text-align: justify;
   top: 5%;
+  font-size: 16pt;
   margin-right: 2em !important;
   margin-left: 2em !important;
   border-radius: 8px;
@@ -203,10 +280,10 @@ body {
 
 .blog-ingredients-container {
   position: relative;
-  bottom: 31%;
-  left: 10%;
-  height: 260px;
-  width: 300px !important;
+  bottom: 23%;
+  right: 20%;
+  height: 380px;
+  width: 390px !important;
   border: 3px solid grey;
   border-radius: 5%;
   background-color: rgb(206, 190, 139);
@@ -215,14 +292,11 @@ body {
 
 .blog-ingredients {
   position: relative;
-  font-family: "Times New Roman", Times, serif;
-  text-align: left;
+  text-align: start;
+  top: 4%;
+  font-size: 16pt;
+  line-height: 1.5;
   margin-top: 1em;
-}
-
-.video-player {
-  position: relative;
-  top: 2%;
 }
 
 /*-- Recipe Index --*/
@@ -287,13 +361,14 @@ body {
   height: 300px;
   content: wrap;
   position: relative;
-  border: solid rgb(199, 197, 197) 7px;
+  border: solid rgba(214, 213, 213, 0.801) 7px;
+  box-shadow: black 3px 2px 40px;
   transition-duration: 0.4s;
 }
 
 .authors:hover {
   transform: translateY(-15px);
-  box-shadow: 5px 3px 60px rgba(233, 229, 226, 0.829);
+  box-shadow: 5px 5px 50px rgba(105, 98, 71, 0.952);
   transition-duration: 0.4s;
   cursor: pointer;
 }
