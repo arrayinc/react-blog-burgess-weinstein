@@ -4,6 +4,15 @@
   font-weight: medium;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 /*-- Global/App --*/
 
 .witcher-font {
@@ -24,6 +33,8 @@
 
 .NavbarTitle {
   font-size: 2em !important;
+  text-shadow: 1px 1px 12px black;
+
 }
 
 .NavbarButtons {
@@ -38,22 +49,31 @@
 .NavbarHover:hover {
   transform: translateY(-3px);
   transition-duration: 0.2s;
+  text-shadow: 2px 2px 8px black;
 }
+
 
 /*-- Footer Nav --*/
 
 .NavBarBottom {
-  position: absolute;
+  position: relative;
   background-color: #343a40;
   color: ivory;
-  bottom: 0;
 }
-.space {
-  margin-left: 16.5em;
+.footer-margin {
+  margin-left: 13.5em;
   margin-top: 0.5%;
 }
 
-.arrow {
+.footer-nav-text {
+  font-size: 16pt;
+  line-height: 1;
+  word-spacing: 3px;
+}
+
+/*-- scroll to top --*/
+
+.chevron {
   margin-left: 150px;
 }
 
@@ -66,27 +86,36 @@
 
 .Blog-Previews {
   border-radius: 90%;
-  width: 250px;
-  height: 250px;
-  padding: 15px;
+  width: 200px;
+  height: 200px;
   position: relative;
+  margin-top: 1.5em;
+  border: solid rgb(218, 184, 123) 7px;
   transition-duration: 0.2s;
+  z-index: 1;
 }
 
 .Blog-Previews:hover {
   transform: translateY(-10px);
   transition-duration: 0.2s;
+  box-shadow: 5px 5px 60px rgba(105, 98, 71, 0.952);
 }
 
 .Blog-Preview-Text {
   color: white;
   font-size: 2em;
+  text-shadow: 2px 2px 2px black;
+
 }
 .Blog-Preview-Link:hover {
   text-decoration: none;
 }
 
 /*-- Carousel --*/
+
+.carousel-container {
+  width: fit-content;
+}
 
 .CarouselOpacity {
   opacity: 80%;
@@ -102,7 +131,7 @@
 /*--  Blog Post Generator --*/
 
 .blog-post-body {
-  background-color: rgb(40, 40, 41);
+  background-color: rgb(36, 36, 36);
   background-position: center;
   height: 95vh !important;
 }
@@ -117,6 +146,8 @@
   font-size: 4em;
   margin-top: -0.5em;
   color: white;
+  text-shadow: rgba(46, 35, 17, 0.897) 2px 2px 3px;
+
 }
 
 .Blog-Subtitle {
@@ -132,12 +163,15 @@
   height: 100px;
   border-radius: 50%;
   z-index: 1;
+  border: solid rgb(255, 255, 255) 3px;
 }
 
 .author-details {
   position: relative;
   margin-top: 1em;
   color: white;
+  text-shadow: rgba(22, 16, 8, 0.897) 2px 2px 2px;
+
 }
 
 .blog-image {
@@ -145,9 +179,9 @@
   left: 10%;
   top: 2em !important;
   width: 500px;
-  height: auto;
-  border-radius: 2%;
-  border: rgb(73, 65, 65) 10px solid;
+  height: 500px;
+  border-radius: 90%;
+  border: solid rgb(218, 184, 123) 7px;
 }
 
 .blog-content-container {
@@ -204,23 +238,22 @@
 
 .recipe-index-body {
   background-color: #0c1a1afa;
-  height: 70vh;
+  height: 76vh;
 }
 
 .recipe-index-container {
   position: relative;
   background-color: transparent;
-  bottom: 400px;
+  bottom: 475px;
   z-index: 2;
 }
-
 
 .index-images {
   border-radius: 90%;
   width: 250px;
   height: 250px;
-  padding: 15px;
   position: relative;
+  border: solid rgb(218, 184, 123) 7px;
   transition-duration: 0.2s;
 }
 
@@ -233,30 +266,43 @@
 /*-- Authors Page --*/
 
 .author-body {
-  background-color: rgb(40, 40, 41);
+  background: linear-gradient(
+      rgba(20, 4, 4, 0.664),
+      rgba(8, 8, 8, 0.883)
+    ),
+    url(Images/AuthorPhotos/Continent.jpeg);
+  background-position: center;
+  height: 100vh;
 }
 
 .author-header-jumbotron {
-  background-color: rgb(40, 40, 41) !important;
+  background-color: transparent !important;
   color: white;
+}
+
+.author-header-text {
+  font-size: 60pt;
+  text-shadow: rgba(170, 130, 67, 0.897) 2px 2px 6px;
+  margin-top: -0.5em;
 }
 
 .authors {
   border-radius: 50%;
   margin-left: 30px;
-  margin-top: -5em;
+  margin-top: -6.5em;
   margin-bottom: 2em;
   width: 300px;
   height: 300px;
   content: wrap;
   position: relative;
-  transition-duration: 0.2s;
+  border: solid rgb(199, 197, 197) 7px;
+  transition-duration: 0.4s;
 }
 
 .authors:hover {
-  transform: translateY(-10px);
-  box-shadow: 5px 5px 20px rgba(39, 12, 12, 0.74);
-  transition-duration: 0.2s;
+  transform: translateY(-15px);
+  box-shadow: 5px 3px 60px rgba(233, 229, 226, 0.829);
+  transition-duration: 0.4s;
   cursor: pointer;
 }
 
@@ -272,14 +318,19 @@
 }
 
 .author-info {
-  margin-top: 2em;
+  margin-top: 1em;
   color: white;
+  font-size: 20pt;
+  text-shadow: rgba(167, 26, 26, 0.76) 2px 2px 6px;
 }
 
 /*-- Sign Up & Contact Images --*/
 
 .transparent {
-  background: linear-gradient(rgba(53, 10, 10, 0.287), rgba(190, 172, 172, 0.45)),
+  background: linear-gradient(
+      rgba(53, 10, 10, 0.287),
+      rgba(190, 172, 172, 0.45)
+    ),
     url(Images/Contact/OfficialWitcher.jpg);
   background-position: center;
   width: 100vw;

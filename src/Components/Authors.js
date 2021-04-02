@@ -3,10 +3,10 @@ import { Container, Row, Col, Image, Jumbotron } from "react-bootstrap";
 
 const AuthorInfoSection = (props) => {
   return (
-    <div className="author-info">
-      <h1 className="author-name witcher-font">{props.blogData.author.name}</h1>
-      <h1 className="author-username witcher-font">{props.blogData.author.username}</h1>
-      <p className="author-about witcher-font">{props.blogData.author.about}</p>
+    <div className="author-info witcher-font">
+      <h1 className="author-name ">{props.blogData.author.name}</h1>
+      <h1 className="author-username ">{props.blogData.author.username}</h1>
+      <p className="author-about">{props.blogData.author.about}</p>
     </div>
   );
 };
@@ -16,7 +16,7 @@ const Authors = (props) => {
   return (
     <div className="author-body">
       <Jumbotron className="author-header-jumbotron mb-5">
-        <h1 className="witcher-font">
+        <h1 className="witcher-font author-header-text">
           Authors from the Continent
         </h1>
       </Jumbotron>
