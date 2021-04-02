@@ -16,17 +16,17 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 10px;               /* width of the entire scrollbar */
+  width: 10px; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0);        /* color of the tracking area */
+  background: rgb(0, 0, 0); /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(74, 55, 68);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 1px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+  background-color: rgb(74, 55, 68); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid rgb(0, 0, 0); /* creates padding around scroll thumb */
 }
 
 /*-- Global/App --*/
@@ -155,17 +155,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .scrollbar:-webkit-scrollbar {
-  width: 10px;               /* width of the entire scrollbar */
+  width: 10px; /* width of the entire scrollbar */
 }
 
 .scrollbar:-webkit-scrollbar-track {
-  background: rgb(0, 0, 0);        /* color of the tracking area */
+  background: rgb(0, 0, 0); /* color of the tracking area */
 }
 
 .scrollbar:-webkit-scrollbar-thumb {
-  background-color: rgb(74, 55, 68);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 1px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+  background-color: rgb(74, 55, 68); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid rgb(0, 0, 0); /* creates padding around scroll thumb */
 }
 
 /*-- Carousel --*/
@@ -193,7 +193,7 @@ body::-webkit-scrollbar-thumb {
 
 .blog-post-body {
   background: linear-gradient(rgba(36, 32, 32, 0.233), rgba(29, 29, 29, 0.281)),
-  url(Images/Food/Parchment.jpeg);
+    url(Images/Food/Parchment.jpeg);
   height: 100vh !important;
 }
 
@@ -209,7 +209,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: -0.5em;
   right: 260px;
   color: white;
-  text-shadow: rgba(46, 35, 17, 0.897) 2px 2px 3px;
+  text-shadow: rgba(110, 109, 107, 0.897) 2px 2px 2px;
 }
 
 .Blog-Subtitle {
@@ -217,6 +217,7 @@ body::-webkit-scrollbar-thumb {
   right: 260px;
   font-size: 2em;
   color: beige;
+  text-shadow: rgba(110, 109, 107, 0.897) 2px 2px 3px;
 }
 
 .author-block {
@@ -234,7 +235,15 @@ body::-webkit-scrollbar-thumb {
   height: 150px;
   border-radius: 50%;
   z-index: 1;
-  border: solid rgb(255, 255, 255) 3px;
+  border: solid rgb(195, 194, 194) 3px;
+  box-shadow: 2px 2px 10px rgba(8, 8, 6, 0.952);
+  transition-duration: 0.2s;
+}
+
+.author-portrait:hover {
+  transform: translateY(-5px);
+  transition-duration: 0.2s;
+  box-shadow: 2px 2px 20px rgba(112, 105, 75, 0.952);
 }
 
 .author-details {
@@ -266,6 +275,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5%;
   background-color: rgb(206, 190, 139);
   overflow: auto;
+  box-shadow: 2px 2px 5px rgba(8, 8, 6, 0.952);
 }
 
 .blog-content {
@@ -288,6 +298,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5%;
   background-color: rgb(206, 190, 139);
   overflow: auto;
+  box-shadow: 2px 2px 5px rgba(8, 8, 6, 0.952);
 }
 
 .blog-ingredients {
@@ -391,7 +402,7 @@ body::-webkit-scrollbar-thumb {
   text-shadow: rgba(167, 26, 26, 0.76) 2px 2px 6px;
 }
 
-/*-- Sign Up & Contact Images --*/
+/*-- Contact Page --*/
 
 .transparent {
   background: linear-gradient(
@@ -404,26 +415,36 @@ body::-webkit-scrollbar-thumb {
   height: 70vh;
 }
 
+.contact-form-container {
+  width: 400px;
+  height: 450px;
+  color: rgb(255, 255, 255);
+  margin-left: 32%;
+  margin-top: 8%;
+}
 
-/* need to clean up after presentation */
+/*-- SignUp Page --*/
 
-
-.spacer {
+.signin-margin {
   margin-top: 100px;
 }
-.spacing {
+.form-margins {
   margin-left: 35px;
   margin-top: 50px;
 }
 
-.right{
+.form-margin-right {
   margin-right: 115px;
 }
+
+.login-form {
+  color: white;
+  font-size: 16pt;
+}
 .signup-backdrop-image {
-  background-image: 
-  linear-gradient(
-      rgba(180, 38, 38, 0.287),
-      rgba(190, 172, 172, 0.45)
+  background-image: linear-gradient(
+      rgba(138, 87, 87, 0.226),
+      rgba(90, 78, 78, 0.233)
     ),
     url(Images/SignUp/signup-background.jpg);
   background-position-x: center;
@@ -432,31 +453,31 @@ body::-webkit-scrollbar-thumb {
   height: 90vh;
 }
 
-.form-container {
-  width: 400px;
-  height: 450px;
-  color: rgb(255, 255, 255);
-  margin-left: 32%;
-  margin-top: 8%;
-}
-.signContainer {
-  background: linear-gradient(
-      rgba(53, 10, 10, 0.287),
-      rgba(190, 172, 172, 0.45)
-    ),
-    url(Images/SignUp/witcher-join.jpg);
-
-  margin-top: 150px;
-  margin-left: 32%;
-  width: 450px;
+.sign-in-container {
+  left: 26%;
+  top: 30%;
+  width: 550px;
   height: 550px;
-  display: flex;
   flex-direction: column;
   border-radius: 19px;
   box-shadow: 0 0 2px rgba(15, 15, 0.28);
   position: relative;
   overflow: visible;
   border: solid black;
+  color: white;
+  font-size: 16pt;
+}
+
+.need-to-sign-up-q {
+  margin-top: 5%;
+}
+
+.already-member-q {
+  margin-top: 7%;
+}
+.sign-in-container-img {
+  background: linear-gradient(rgba(59, 53, 53, 0.39), rgba(65, 60, 60, 0.424)),
+    url(Images/SignUp/witcher-join.jpg);
 }
 /*-- Error Page --*/
 
