@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Switch, Route } from "react-router-dom";
-import RecipesHome from "./Components/RecipesHome";
+import RecipesHome from "./Components/RecipesIndex";
 import HomePage from "./Components/HomePage";
 import Authors from "./Components/Authors";
 import blogsData from "./Components/BlogData";

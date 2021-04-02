@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image, Jumbotron } from "react-bootstrap";
 import ReactPlayer from "react-player";
-import { Link } from "react-router-dom";
 
 const BlogPost = (props) => {
   return (

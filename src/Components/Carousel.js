@@ -7,7 +7,7 @@ import GroupCheers from "../Images/Carousel/GroupCheers.webp";
 export class Slideshow extends Component {
   render() {
     return (
-      <Carousel fade>
+      <Carousel className="carousel-container" overflow-hidden fade>
         <Carousel.Item className="CarouselOpacity">
           <img
             className="d-block w-100"

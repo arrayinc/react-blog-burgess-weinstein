@@ -8,7 +8,7 @@ const RecipesHome = (props) => {
   return (
     <>
     <div className="recipe-index-body">
-    <Image class="tavern-image" height="643px" src={Tavern}></Image>
+    <Image class="tavern-image" width="1665" src={Tavern}></Image>
     <Container className="recipe-index-container">
       <Row className="recipe-index-row">
         {props.blogData.map((val, index) => (

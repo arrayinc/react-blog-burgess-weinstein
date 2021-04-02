@@ -24,7 +24,7 @@ export default function ScrollToTop() {
 
   return (
     <div
-      className="scroll-to-top arrow"
+      className="scroll-to-top chevron"
       style={{ position: "relative", zIndex: "2" }}
     >
       {isVisible && (
