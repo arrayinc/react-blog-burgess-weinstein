@@ -5,7 +5,7 @@ import { Slideshow } from "./Carousel";
 
 const HomePage = (props) => {
   return (
-    <>
+    <div className="home-page-body">
       <Row>
         <Slideshow />
       </Row>
@@ -19,7 +19,7 @@ const HomePage = (props) => {
           </Col>
         ))}
       </Row>
-    </>
+    </div>
   );
 };
 
