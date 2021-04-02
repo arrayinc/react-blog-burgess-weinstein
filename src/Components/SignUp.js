@@ -1,28 +1,48 @@
-import React from "react";
+import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Books from "../Images/About/Books.jpeg";
+import { AccountBox } from './AccountContainer';
 
-function SignUp() {
-  return (
-    <Container className="sign-up-container">
-      <Row>
-        <Col>
-          <img
-            src={Books}
-            alt="Books wrapped in spiderwebs"
-            className="Books"
-          />
-        </Col>
-        <Col>
-          About The White Wolf <br /> How did it come about?
-          <br />
-          How did it get here?
-          <br />
-          Does it know things?
-          <br /> Sign up and find out!
-        </Col>
-      </Row>
-    </Container>
-  );
+export default class SignIn extends Component {
+  state = {
+    user: '',
+    rememberMe: false
+  };
+
+  handleChange = (event) => {
+    const input = event.target;
+    const value = input.type === 'checkbox' ? input.checked : input.value;
+
+    this.setState({ [input.name]: value });
+  };
+
+  handleFormSubmit = () => {
+    const { user, rememberMe } = this.state;
+    localStorage.setItem('rememberMe', rememberMe);
+    localStorage.setItem('user', rememberMe ? user : '');
+  };
+  componentDidMount() {
+    const rememberMe = localStorage.getItem('rememberMe') === 'true';
+    const user = rememberMe ? localStorage.getItem('user') : '';
+    this.setState({ user, rememberMe });
+  }
+
+  render() {
+    return (
+      <div className="signup-backdrop-image">
+        <Container><Row><Col>
+        <AccountBox />
+        {/* Commented out for presentation DO NOT DELETE 
+         <form onSubmit={this.handleFormSubmit}>
+          <label>
+            User: <input name="user" value={this.state.user} onChange={this.handleChange} />
+          </label>
+          <label>
+            <input name="rememberMe" checked={this.state.rememberMe} onChange={this.handleChange} type="checkbox" /> Remember me
+    </label>
+          <button variant="danger" type="submit">Sign In</button>
+        </form> */}
+        </Col></Row></Container>
+      </div>
+    )
+  }
 }
-export default SignUp;
