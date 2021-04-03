@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Form, Button } from "react-bootstrap";
-import { AccountContext } from "./AccountContext";
-import Local from "./LocalStorage";
+import { AccountContext } from "./accountcontext";
+import Local from "./localstorage";
 //connects to Accountcontext to allow switch back and forth to sign up page
 export function LoginForm(props) {
   const { switchToSignup } = useContext(AccountContext);

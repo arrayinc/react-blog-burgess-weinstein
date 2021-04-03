@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { AccountBox } from "./AccountContainer";
+import { AccountBox } from "./accountcontainer";
 
 export default class SignIn extends Component {
 

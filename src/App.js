@@ -2,18 +2,18 @@ import React from "react";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Switch, Route } from "react-router-dom";
-import RecipesHome from "./Components/RecipesIndex";
-import HomePage from "./Components/HomePage";
-import Authors from "./Components/Authors";
-import blogsData from "./Components/BlogData";
-import BlogPost from "./Components/BlogPost";
+import RecipesHome from "./Components/recipesindex";
+import HomePage from "./Components/homepage";
+import Authors from "./Components/authors";
+import blogsData from "./Components/blogdata";
+import BlogPost from "./Components/blogpost";
 
-import Navigation from "./Components/Navbar";
-import PageFooter from "./Components/Footer";
-import Signin from "./Components/Login";
-import ContactPage from "./Components/Contact";
+import Navigation from "./Components/navbar";
+import PageFooter from "./Components/footer";
+import Signin from "./Components/login";
+import ContactPage from "./Components/contact";
 
-import ErrorPage from "./Components/ErrorPage";
+import ErrorPage from "./Components/errorpage";
 
 // This App.js is the website itself and pulls on core components to eventually be compiled into the blog//
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
-import ContactModal from "./Modal";
+import ContactModal from "./modal";
 
 function ContactPage() {
   return (
