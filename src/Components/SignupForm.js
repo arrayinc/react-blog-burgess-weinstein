@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import { Form, Button } from "react-bootstrap";
 import { AccountContext } from "./AccountContext";
-// import useLocalStorage from "./LocalStorage";
 
 export function SignUpForm(props) {
+    //allows switch to login page through use of AccountContext
   const { switchToSignin } = useContext(AccountContext);
-
+//Content of the sign up fprm 
   return (
     <Form>
       <h2>Wish to Become a Witcher?</h2>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Image, Jumbotron } from "react-bootstrap";
-
+//this section gets the info text  from Blogdata that sits below the pictures
 const AuthorInfoSection = (props) => {
   return (
     <div className="author-info">
@@ -12,6 +12,7 @@ const AuthorInfoSection = (props) => {
 };
 
 const Authors = (props) => {
+  //using state to set the default content of the bottom container to the "0" index of the BlogData array which in this case is Yennefers content
   const [authorId, setAuthorId] = useState(0);
   return (
     <div className="author-body">
@@ -22,6 +23,7 @@ const Authors = (props) => {
       </Jumbotron>
       <Container>
         <Row>
+        {/* this passes the author images to appear in the row without hard coding */}
           {props.blogData.map((val, index) => (
             <Col key={val.id}>
               <Image
@@ -33,8 +35,8 @@ const Authors = (props) => {
           ))}
         </Row>
       </Container>
-
       <Container className="author-bio-container">
+        {/* passes  the author about info into the container */}
         <AuthorInfoSection className="author-bio-text" blogData={props.blogData[authorId]} />
       </Container>
     </div>
