@@ -15,6 +15,8 @@ import ContactPage from "./Components/Contact";
 
 import ErrorPage from "./Components/ErrorPage";
 
+// This App.js is the website itself and pulls on core components to eventually be compiled.//
+
 function App() {
   return (
     <main className="App">
@@ -29,7 +31,9 @@ function App() {
             render={(props) => <HomePage blogData={blogsData} {...props} />}
           />
 
-          <Route path="/Recipes" render={(props) => <RecipesHome blogData={blogsData} {...props} />}
+          <Route
+            path="/Recipes"
+            render={(props) => <RecipesHome blogData={blogsData} {...props} />}
           />
           <Route path="/Signup" component={Signin} />
           <Route path="/Contact" component={ContactPage} />

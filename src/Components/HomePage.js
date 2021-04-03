@@ -3,6 +3,9 @@ import { Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Slideshow } from "./Carousel";
 
+// This is the homepage, including the carousel and below it, a row of recipe images and titles pulled from the BlogData component. //
+// The row of images resemble the one in RecipeIndex although vary in styling.//
+
 const HomePage = (props) => {
   return (
     <div className="home-page-body">

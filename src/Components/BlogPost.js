@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Image, Jumbotron } from "react-bootstrap";
 
+// This is the template for the blog. It generates the recipes found in the dropdown navbar button by pulling text from BlogData //
+
 const BlogPost = (props) => {
   return (
     <section className="blog-post-body">
@@ -18,15 +20,15 @@ const BlogPost = (props) => {
           </Jumbotron>
         </Col>
       </Row>
-
+      
       <Row>
         <Col>
           <Container className="blog-image-container">
             <Image className="blog-image" src={props.blogData.coverImg} />
           </Container>
         </Col>
-        
-          <Col>
+
+        <Col>
           <Container className="author-block">
             <Container>
               <a href="/Authors">

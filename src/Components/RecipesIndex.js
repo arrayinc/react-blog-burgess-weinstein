@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Tavern from "../Images/Food/Tavern.gif"
 
-
+// This builds the recipe index body and it's row of images by pulling on BlogData component information
 const RecipesHome = (props) => {
   return (
     <>
