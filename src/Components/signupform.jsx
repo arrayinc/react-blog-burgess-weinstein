@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Form, Button } from "react-bootstrap";
-import { AccountContext } from "./AccountContext";
+import { AccountContext } from "./accountcontext";
 
 export function SignUpForm(props) {
   //allows switch to login page through use of AccountContext

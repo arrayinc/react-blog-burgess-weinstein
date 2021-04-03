@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { LoginForm } from "./LoginForm";
-import { AccountContext } from "./AccountContext";
-import { SignUpForm } from "./SignupForm";
+import { LoginForm } from "./loginform";
+import { AccountContext } from "./accountcontext";
+import { SignUpForm } from "./signupform";
 
 //  home page for the sign up sheet
 export function AccountBox(props) {
