@@ -58,8 +58,8 @@ const Navigation = (props) => {
           <Nav.Link className="NavbarButtons NavbarHover" href="/Contact">
             Contact
           </Nav.Link>
-          <Nav.Link className="NavbarButtons NavbarHover" href="/SignUp">
-            Sign Up
+          <Nav.Link className="NavbarButtons NavbarHover" href="/Login">
+            Login
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
