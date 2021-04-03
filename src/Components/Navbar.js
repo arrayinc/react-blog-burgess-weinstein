@@ -2,6 +2,8 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
+// useLocation is here to eventually display the current location of the user on the site. //
+
 const Navigation = (props) => {
   const location = useLocation();
   return (
@@ -12,6 +14,7 @@ const Navigation = (props) => {
       sticky="top"
       className="NavBar"
     >
+      {/* Brand is the title of the site rendered on the top left */}
       <Navbar.Brand href="/" className="NavbarTitle witcher-font">
         The White Wolf
       </Navbar.Brand>
@@ -30,6 +33,11 @@ const Navigation = (props) => {
             title="Recipes"
             id="collasible-nav-dropdown"
           >
+
+            {/* The dropdown.Item(s) below are styled by a hidden boostrap class only found by inspecting */}
+            {/* Their styling is seperate from that of their parent NavDropdown button coded above */}
+
+            {/* The href path is created by App.js when blogsData of component BlogData is mapped, look for path={"/blogPost/" + val.id} in App.js */}
             <NavDropdown.Item href="/blogPost/1">
               King's Court Lamb
             </NavDropdown.Item>

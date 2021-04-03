@@ -2,6 +2,8 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Error404 from "../Images/ErrorPageBG/Error404.gif";
 
+// Function generates a container which holds the Error404 gif. //
+
 function ErrorPage() {
   return (
     <Container class="ErrorContainer">
