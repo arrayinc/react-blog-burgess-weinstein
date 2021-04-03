@@ -10,7 +10,7 @@ import BlogPost from "./Components/BlogPost";
 
 import Navigation from "./Components/Navbar";
 import PageFooter from "./Components/Footer";
-import Signin from "./Components/SignUp";
+import Signin from "./Components/Login";
 import ContactPage from "./Components/Contact";
 
 import ErrorPage from "./Components/ErrorPage";
@@ -38,7 +38,7 @@ function App() {
             render={(props) => <RecipesHome blogData={blogsData} {...props} />}
           />
           {/* These routes are visually stacked when visiting the Contact section */}
-          <Route path="/Signup" component={Signin} />
+          <Route path="/Login" component={Signin} />
           <Route path="/Contact" component={ContactPage} />
 
           <Route

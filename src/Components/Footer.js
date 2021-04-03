@@ -47,8 +47,8 @@ const PageFooter = (props) => {
             <Nav.Link className="NavbarHover" href="/Contact">
               Contact
             </Nav.Link>
-            <Nav.Link className="NavbarHover" href="/SignUp">
-              SignUp
+            <Nav.Link className="NavbarHover" href="/Login">
+              Login
             </Nav.Link>
           </Nav>
         </Col>
