@@ -5,14 +5,14 @@ export default class Local extends Component {
     user: "",
     rememberMe: false,
   };
-//looking for if the checkbox has been clicked to fire an event of an input name 
+  //looking for if the checkbox has been clicked to fire an event of an input name
   handleChange = (event) => {
     const input = event.target;
     const value = input.type === "checkbox" ? input.checked : input.value;
 
     this.setState({ [input.name]: value });
   };
-//sets the value to the local storage  and saves the changed input
+  //sets the value to the local storage  and saves the changed input
   handleFormSubmit = () => {
     const { user, rememberMe } = this.state;
     localStorage.setItem("rememberMe", rememberMe);
@@ -24,7 +24,7 @@ export default class Local extends Component {
     const user = rememberMe ? localStorage.getItem("user") : "";
     this.setState({ user, rememberMe });
   }
-//this is the front end that shows up on the page and listens for change events to username and/or remember me
+  //this is the front end that shows up on the page and listens for change events to username and/or remember me
   render() {
     return (
       <form onSubmit={this.handleFormSubmit}>
@@ -62,4 +62,3 @@ export default class Local extends Component {
     );
   }
 }
-

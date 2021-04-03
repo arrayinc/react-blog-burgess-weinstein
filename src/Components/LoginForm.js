@@ -15,10 +15,10 @@ export function LoginForm(props) {
         Submit
       </Button>
       <div className="need-to-sign-up-q">
-      <p>need to sign up? </p>
-      <Button href="#" variant="danger" onClick={switchToSignup}>
-        sign up
-      </Button>
+        <p>need to sign up? </p>
+        <Button href="#" variant="danger" onClick={switchToSignup}>
+          sign up
+        </Button>
       </div>
     </Form>
   );

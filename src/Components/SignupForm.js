@@ -3,9 +3,9 @@ import { Form, Button } from "react-bootstrap";
 import { AccountContext } from "./AccountContext";
 
 export function SignUpForm(props) {
-    //allows switch to login page through use of AccountContext
+  //allows switch to login page through use of AccountContext
   const { switchToSignin } = useContext(AccountContext);
-//Content of the sign up fprm 
+  //Content of the sign up fprm
   return (
     <Form>
       <h2>Wish to Become a Witcher?</h2>
@@ -28,10 +28,10 @@ export function SignUpForm(props) {
         Sign-up
       </Button>
       <div className="already-member-q">
-      <p>Already a member? </p>
-      <Button variant="danger" href="#" onClick={switchToSignin}>
-        Log in
-      </Button>
+        <p>Already a member? </p>
+        <Button variant="danger" href="#" onClick={switchToSignin}>
+          Log in
+        </Button>
       </div>
     </Form>
   );

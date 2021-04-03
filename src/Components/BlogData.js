@@ -68,11 +68,11 @@ export const blogsData = [
     ),
     comments: [
       {
-        name: "Guest",
+        name: "Bob",
         text: "Wow thanks for the recipe!",
       },
       {
-        name: "xxXDarkSoulsFanXxx_42",
+        name: "Witchaman",
         text: "Good stuff YenBurger",
       },
     ],
@@ -95,13 +95,9 @@ export const blogsData = [
       <Container>
         <div>
           <ul>
-            <li>
-              2 bottles of wine (Preferably from Corvo Bianco)
-            </li>
+            <li>2 bottles of wine (Preferably from Corvo Bianco)</li>
 
-            <li>
-              1 Balisse fruit (I guess Apples could do as well..)
-            </li>
+            <li>1 Balisse fruit (I guess Apples could do as well..)</li>
 
             <li>
               1 Mandrake root (For those too weak to find them, ginger works.)
@@ -135,13 +131,13 @@ export const blogsData = [
     ),
     comments: [
       {
-        name: "Guest",
-        text: "thiss artickle suxxx!",
+        name: "Foodie52",
+        text: "Can we sponsor you??",
       },
       {
-        name: "xxXDarkSoulsFanXxx_42",
+        name: "BonAppSoul20",
         text:
-          "I found this article to be particularly enlightening. Good show, sir!",
+          "Make this for me @Foodie52!",
       },
     ],
   },
@@ -224,13 +220,13 @@ export const blogsData = [
     ),
     comments: [
       {
-        name: "Guest",
-        text: "thiss artickle suxxx!",
+        name: "WowzaDude",
+        text: "What an essay of a pizza dough!",
       },
       {
-        name: "xxXDarkSoulsFanXxx_42",
+        name: "ReadThisForTheSlice",
         text:
-          "I found this article to be particularly enlightening. Good show, sir!",
+          "Never making pizza again without this dough.",
       },
     ],
   },

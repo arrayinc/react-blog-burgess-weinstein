@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Chevron2 from "../Icons/Chevron2.png";
 
+// Creates a scroll to top button, only visible with an event listener when scrolling down the bottom of the site //
+
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 

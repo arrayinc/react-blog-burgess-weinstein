@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
+
 // button that sends a pop up message in response to button click event
 //sets the default state of the modal to be dormant/unfired
 function ContactModal() {
   const [show, setShow] = useState();
-// sets the functions so that the message and pop up doesnt show until the event is fired
+  // sets the functions so that the message and pop up doesnt show until the event is fired
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   // Start of what renders
