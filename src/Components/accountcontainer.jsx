@@ -4,7 +4,7 @@ import { AccountContext } from "./accountcontext";
 import { SignUpForm } from "./signupform";
 
 //  home page for the sign up sheet
-export function AccountBox(props) {
+export function AccountContainer(props) {
   //sets the active/default state of the page
   const [active, setActive] = useState("signin");
 
