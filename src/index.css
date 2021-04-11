@@ -1,0 +1,488 @@
+@font-face {
+  font-family: "thewitcher";
+  src: local("TheWitcher"), url("./Fonts/TheWitcher.ttf") format("truetype");
+  font-weight: medium;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(74, 55, 68); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid rgb(0, 0, 0); /* creates padding around scroll thumb */
+}
+
+/*-- Global/App --*/
+
+.witcher-font {
+  font-family: thewitcher;
+  font-weight: medium;
+}
+
+.greatprimer-font {
+  font-family: "IM Fell Great Primer SC", serif;
+}
+
+.App {
+  text-align: center;
+  background-color: rgb(172, 178, 181);
+}
+
+/*-- Top Navbar --*/
+
+.NavBar {
+  margin-bottom: 0;
+}
+
+.NavbarTitle {
+  font-size: 2em !important;
+  text-shadow: 0.5px 1px 8px black;
+}
+
+.NavbarButtons {
+  font-size: 1.5em;
+  text-shadow: 0.5px 1px 8px black;
+}
+
+.NavbarHover {
+  transition-duration: 0.2s;
+  position: relative;
+}
+
+.NavbarHover:hover {
+  transform: translateY(-3px);
+  transition-duration: 0.2s;
+  text-shadow: 2px 2px 4px rgb(47, 38, 22);
+}
+
+/*-- Top Navbar Recipes Dropdown Button --*/
+
+.Navbar-Dropdown {
+  transition-duration: 0.2s;
+  position: relative;
+  font-size: 1.5em;
+  text-shadow: 0.5px 1px 8px black;
+}
+
+.Navbar-Dropdown:hover {
+  position: relative;
+  transform: translateY(-3px);
+  transition-duration: 0.2s;
+  text-shadow: none;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: rgb(197, 192, 192);
+  text-decoration: none;
+  background-color: #212529 !important;
+  text-shadow: none;
+}
+
+/*-- Footer Nav --*/
+
+.NavBarBottom {
+  position: relative;
+  background-color: #343a40;
+  color: ivory;
+}
+.footer-margin {
+  margin-left: 13.5em;
+  margin-top: 0.5%;
+}
+
+.footer-nav-text {
+  font-size: 16pt;
+  line-height: 1;
+  word-spacing: 3px;
+}
+
+/*-- scroll to top --*/
+
+.chevron {
+  margin-left: 150px;
+}
+
+/*-- HomePage --*/
+
+.Blog-Previews-Row {
+  position: relative;
+  background-color: #28323c;
+}
+
+.Blog-Previews {
+  border-radius: 90%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-top: 1.5em;
+  border: solid rgb(218, 184, 123) 7px;
+  transition-duration: 0.2s;
+  z-index: 1;
+  box-shadow: black 3px 2px 30px;
+}
+
+.Blog-Previews:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.2s;
+  box-shadow: 5px 5px 40px rgba(105, 98, 71, 0.952);
+}
+
+.Blog-Preview-Text {
+  color: white;
+  font-size: 2em;
+  text-shadow: 2px 2px 2px black;
+}
+.Blog-Preview-Link:hover {
+  text-decoration: none;
+}
+
+.scrollbar:-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+
+.scrollbar:-webkit-scrollbar-track {
+  background: rgb(0, 0, 0); /* color of the tracking area */
+}
+
+.scrollbar:-webkit-scrollbar-thumb {
+  background-color: rgb(74, 55, 68); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 1px solid rgb(0, 0, 0); /* creates padding around scroll thumb */
+}
+
+/*-- Carousel --*/
+
+.carousel-container {
+  width: fit-content;
+  font-size: 25pt;
+}
+
+.CarouselOpacity {
+  opacity: 80%;
+}
+
+.carousel-caption {
+  position: relative;
+  top: 35%;
+  left: 28% !important;
+  width: 22em;
+  height: 10em;
+  background-color: rgba(0, 0, 0, 0.157);
+  border-radius: 10% !important;
+}
+
+/*--  Blog Post Generator --*/
+
+.blog-post-body {
+  background: linear-gradient(rgba(36, 32, 32, 0.233), rgba(29, 29, 29, 0.281)),
+    url(Images/Food/Parchment.jpeg);
+  height: 100vh !important;
+}
+
+.blog-post-jumbotron {
+  height: 200px;
+  position: relative;
+  background-color: rgb(37, 37, 37) !important;
+}
+
+.Blog-Title {
+  position: relative;
+  font-size: 4em;
+  margin-top: -0.5em;
+  right: 260px;
+  color: white;
+  text-shadow: rgba(110, 109, 107, 0.897) 2px 2px 2px;
+}
+
+.Blog-Subtitle {
+  position: relative;
+  right: 260px;
+  font-size: 2em;
+  color: beige;
+  text-shadow: rgba(110, 109, 107, 0.897) 2px 2px 3px;
+}
+
+.author-block {
+  position: relative;
+  bottom: 230px;
+  left: 180px;
+  z-index: 1;
+}
+
+.author-portrait {
+  position: relative;
+  float: left;
+  right: 2%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 1;
+  border: solid rgb(195, 194, 194) 3px;
+  box-shadow: 2px 2px 10px rgba(8, 8, 6, 0.952);
+  transition-duration: 0.2s;
+}
+
+.author-portrait:hover {
+  transform: translateY(-5px);
+  transition-duration: 0.2s;
+  box-shadow: 2px 2px 20px rgba(112, 105, 75, 0.952);
+}
+
+.author-details {
+  position: relative;
+  font-size: 17pt;
+  margin-top: 1em;
+  color: white;
+  text-shadow: rgba(80, 78, 75, 0.897) 2px 2px 2px;
+}
+
+.blog-image {
+  position: relative;
+  left: 10%;
+  top: 2em !important;
+  width: 500px;
+  height: 500px;
+  border-radius: 90%;
+  border: solid rgb(218, 184, 123) 7px;
+  box-shadow: black 3px 2px 40px;
+}
+
+.blog-content-container {
+  position: relative;
+  bottom: 20%;
+  right: 10%;
+  height: 240px;
+  width: 640px !important;
+  border: 3px solid grey;
+  border-radius: 5%;
+  background-color: rgb(206, 190, 139);
+  overflow: auto;
+  box-shadow: 2px 2px 5px rgba(8, 8, 6, 0.952);
+}
+
+.blog-content {
+  position: relative;
+  text-align: justify;
+  top: 5%;
+  font-size: 16pt;
+  margin-right: 2em !important;
+  margin-left: 2em !important;
+  border-radius: 8px;
+}
+
+.blog-ingredients-container {
+  position: relative;
+  bottom: 23%;
+  right: 20%;
+  height: 380px;
+  width: 390px !important;
+  border: 3px solid grey;
+  border-radius: 5%;
+  background-color: rgb(206, 190, 139);
+  overflow: auto;
+  box-shadow: 2px 2px 5px rgba(8, 8, 6, 0.952);
+}
+
+.blog-ingredients {
+  position: relative;
+  text-align: start;
+  top: 4%;
+  font-size: 16pt;
+  line-height: 1.5;
+  margin-top: 1em;
+}
+
+/*-- Recipe Index --*/
+
+.tavern-image {
+  border-radius: 5%;
+}
+
+.recipe-index-body {
+  background-color: #0c1a1afa;
+  height: 76vh;
+}
+
+.recipe-index-container {
+  position: relative;
+  background-color: transparent;
+  bottom: 475px;
+  z-index: 2;
+}
+
+.index-images {
+  border-radius: 90%;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border: solid rgb(218, 184, 123) 7px;
+  transition-duration: 0.2s;
+}
+
+.index-images:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.2s;
+  box-shadow: 5px 5px 90px rgba(221, 174, 72, 0.829);
+}
+
+/*-- Authors Page --*/
+
+.author-body {
+  background: linear-gradient(rgba(20, 4, 4, 0.664), rgba(8, 8, 8, 0.883)),
+    url(Images/AuthorPhotos/Continent.jpeg);
+  background-position: center;
+  height: 100vh;
+}
+
+.author-header-jumbotron {
+  background-color: transparent !important;
+  color: white;
+}
+
+.author-header-text {
+  font-size: 60pt;
+  text-shadow: rgba(170, 130, 67, 0.897) 2px 2px 6px;
+  margin-top: -0.5em;
+}
+
+.authors {
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-top: -6.5em;
+  margin-bottom: 2em;
+  width: 300px;
+  height: 300px;
+  content: wrap;
+  position: relative;
+  border: solid rgba(214, 213, 213, 0.801) 7px;
+  box-shadow: black 3px 2px 40px;
+  transition-duration: 0.4s;
+}
+
+.authors:hover {
+  transform: translateY(-15px);
+  box-shadow: 5px 5px 50px rgba(105, 98, 71, 0.952);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.author-bio-container {
+  border: none rgb(103, 94, 94);
+  border-radius: 50px;
+  height: 250px;
+  width: 500px;
+}
+
+.author-bio-text {
+  text-align: justify;
+}
+
+.author-info {
+  margin-top: 1em;
+  color: white;
+  font-size: 20pt;
+  text-shadow: rgba(167, 26, 26, 0.76) 2px 2px 6px;
+}
+
+/*-- Contact Page --*/
+
+.transparent {
+  background: linear-gradient(
+      rgba(53, 10, 10, 0.287),
+      rgba(190, 172, 172, 0.287)
+    ),
+    url(Images/Contact/OfficialWitcher.jpg);
+  background-position: center;
+  width: 100vw;
+  height: 70vh;
+}
+
+.contact-form-container {
+  width: 400px;
+  height: 450px;
+  color: rgb(255, 255, 255);
+  margin-left: 32%;
+  margin-top: 8%;
+}
+
+/*-- Login Page --*/
+
+.signin-margin {
+  margin-top: 100px;
+}
+.form-margins {
+  margin-left: 35px;
+  margin-top: 50px;
+}
+
+.form-margin-right {
+  margin-right: 115px;
+}
+
+.login-form {
+  color: white;
+  font-size: 16pt;
+}
+.signup-backdrop-image {
+  background-image: linear-gradient(
+      rgba(138, 87, 87, 0.226),
+      rgba(90, 78, 78, 0.233)
+    ),
+    url(Images/SignUp/signup-background.jpg);
+  background-position-x: center;
+  background-position-y: center;
+  width: 100vw;
+  height: 90vh;
+}
+
+.sign-in-container {
+  left: 26%;
+  top: 30%;
+  width: 550px;
+  height: 550px;
+  flex-direction: column;
+  border-radius: 19px;
+  box-shadow: 0 0 2px rgba(15, 15, 0.28);
+  position: relative;
+  overflow: visible;
+  border: solid black;
+  color: white;
+  font-size: 16pt;
+}
+
+.need-to-sign-up-q {
+  margin-top: 5%;
+}
+
+.already-member-q {
+  margin-top: 7%;
+}
+.sign-in-container-img {
+  background: linear-gradient(rgba(59, 53, 53, 0.39), rgba(65, 60, 60, 0.424)),
+    url(Images/SignUp/witcher-join.jpg);
+}
+/*-- Error Page --*/
+
+.ErrorGIF {
+  width: 1000px;
+  height: auto;
+  z-index: -1;
+}
