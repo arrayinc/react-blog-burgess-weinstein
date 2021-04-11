@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { AccountBox } from "./accountcontainer";
+import { AccountContainer } from "./accountcontainer";
 
 export default class SignIn extends Component {
 
@@ -10,7 +10,7 @@ export default class SignIn extends Component {
         <Container>
           <Row>
             <Col>
-              <AccountBox />
+              <AccountContainer />
             </Col>
           </Row>
         </Container>
